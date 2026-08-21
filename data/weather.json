@@ -1,0 +1,2396 @@
+[
+  {
+    "coord": {
+      "lon": -1.5115,
+      "lat": 48.636
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.17,
+      "feels_like": 15.96,
+      "temp_min": 16.17,
+      "temp_max": 16.17,
+      "pressure": 1012,
+      "humidity": 81,
+      "sea_level": 1012,
+      "grnd_level": 1007
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.23,
+      "deg": 289,
+      "gust": 6.79
+    },
+    "clouds": {
+      "all": 84
+    },
+    "dt": 1787262032,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787202368,
+      "sunset": 1787253191
+    },
+    "timezone": 7200,
+    "id": 6435453,
+    "name": "Huisnes-sur-Mer",
+    "cod": 200,
+    "name_city": "Mont Saint-Michel"
+  },
+  {
+    "coord": {
+      "lon": -2.026,
+      "lat": 48.6495
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 17.29,
+      "feels_like": 17.09,
+      "temp_min": 15.99,
+      "temp_max": 17.29,
+      "pressure": 1012,
+      "humidity": 77,
+      "sea_level": 1012,
+      "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.14,
+      "deg": 290
+    },
+    "clouds": {
+      "all": 20
+    },
+    "dt": 1787262034,
+    "sys": {
+      "type": 1,
+      "id": 6557,
+      "country": "FR",
+      "sunrise": 1787202490,
+      "sunset": 1787253316
+    },
+    "timezone": 7200,
+    "id": 2978640,
+    "name": "St-Malo",
+    "cod": 200,
+    "name_city": "Saint-Malo"
+  },
+  {
+    "coord": {
+      "lon": -0.7025,
+      "lat": 49.2765
+    },
+    "weather": [
+      {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.14,
+      "feels_like": 16.08,
+      "temp_min": 16.14,
+      "temp_max": 16.14,
+      "pressure": 1011,
+      "humidity": 87,
+      "sea_level": 1011,
+      "grnd_level": 1005
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.94,
+      "deg": 246,
+      "gust": 8.13
+    },
+    "clouds": {
+      "all": 17
+    },
+    "dt": 1787262035,
+    "sys": {
+      "type": 1,
+      "id": 6569,
+      "country": "FR",
+      "sunrise": 1787202088,
+      "sunset": 1787253083
+    },
+    "timezone": 7200,
+    "id": 3034483,
+    "name": "Bayeux",
+    "cod": 200,
+    "name_city": "Bayeux"
+  },
+  {
+    "coord": {
+      "lon": 0.108,
+      "lat": 49.4939
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.51,
+      "feels_like": 18.3,
+      "temp_min": 17.86,
+      "temp_max": 18.51,
+      "pressure": 1010,
+      "humidity": 72,
+      "sea_level": 1010,
+      "grnd_level": 1008
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.69,
+      "deg": 270
+    },
+    "clouds": {
+      "all": 25
+    },
+    "dt": 1787262037,
+    "sys": {
+      "type": 1,
+      "id": 6533,
+      "country": "FR",
+      "sunrise": 1787201863,
+      "sunset": 1787252919
+    },
+    "timezone": 7200,
+    "id": 3003796,
+    "name": "Le Havre",
+    "cod": 200,
+    "name_city": "Le Havre"
+  },
+  {
+    "coord": {
+      "lon": 1.094,
+      "lat": 49.4405
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.54,
+      "feels_like": 16.36,
+      "temp_min": 14.04,
+      "temp_max": 17,
+      "pressure": 1010,
+      "humidity": 81,
+      "sea_level": 1010,
+      "grnd_level": 998
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.09,
+      "deg": 250
+    },
+    "clouds": {
+      "all": 92
+    },
+    "dt": 1787261835,
+    "sys": {
+      "type": 2,
+      "id": 59628,
+      "country": "FR",
+      "sunrise": 1787201634,
+      "sunset": 1787252675
+    },
+    "timezone": 7200,
+    "id": 2982652,
+    "name": "Rouen",
+    "cod": 200,
+    "name_city": "Rouen"
+  },
+  {
+    "coord": {
+      "lon": 2.32,
+      "lat": 48.8589
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.48,
+      "feels_like": 18.24,
+      "temp_min": 17.74,
+      "temp_max": 19.5,
+      "pressure": 1011,
+      "humidity": 71,
+      "sea_level": 1011,
+      "grnd_level": 1001
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.57,
+      "deg": 290
+    },
+    "clouds": {
+      "all": 73
+    },
+    "dt": 1787262351,
+    "sys": {
+      "type": 2,
+      "id": 2012208,
+      "country": "FR",
+      "sunrise": 1787201418,
+      "sunset": 1787252302
+    },
+    "timezone": 7200,
+    "id": 6545270,
+    "name": "Palais-Royal",
+    "cod": 200,
+    "name_city": "Paris"
+  },
+  {
+    "coord": {
+      "lon": 2.2957,
+      "lat": 49.8942
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.07,
+      "feels_like": 15.93,
+      "temp_min": 16.07,
+      "temp_max": 16.07,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 999
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.79,
+      "deg": 240,
+      "gust": 6.7
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262578,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787201282,
+      "sunset": 1787252450
+    },
+    "timezone": 7200,
+    "id": 3037854,
+    "name": "Amiens",
+    "cod": 200,
+    "name_city": "Amiens"
+  },
+  {
+    "coord": {
+      "lon": 3.0635,
+      "lat": 50.6366
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.43,
+      "feels_like": 16.27,
+      "temp_min": 15.94,
+      "temp_max": 16.79,
+      "pressure": 1009,
+      "humidity": 82,
+      "sea_level": 1009,
+      "grnd_level": 1005
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.09,
+      "deg": 210
+    },
+    "clouds": {
+      "all": 3
+    },
+    "dt": 1787261889,
+    "sys": {
+      "type": 2,
+      "id": 2011132,
+      "country": "FR",
+      "sunrise": 1787200991,
+      "sunset": 1787252372
+    },
+    "timezone": 7200,
+    "id": 6614176,
+    "name": "La Madeleine",
+    "cod": 200,
+    "name_city": "Lille"
+  },
+  {
+    "coord": {
+      "lon": 7.7507,
+      "lat": 48.5846
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.98,
+      "feels_like": 18.71,
+      "temp_min": 17.94,
+      "temp_max": 20.02,
+      "pressure": 1011,
+      "humidity": 68,
+      "sea_level": 1011,
+      "grnd_level": 995
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 0,
+      "deg": 0
+    },
+    "clouds": {
+      "all": 50
+    },
+    "dt": 1787262045,
+    "sys": {
+      "type": 1,
+      "id": 6595,
+      "country": "FR",
+      "sunrise": 1787200150,
+      "sunset": 1787250964
+    },
+    "timezone": 7200,
+    "id": 2973781,
+    "name": "Arrondissement de Strasbourg",
+    "cod": 200,
+    "name_city": "Strasbourg"
+  },
+  {
+    "coord": {
+      "lon": 7.38,
+      "lat": 48.2422
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.54,
+      "feels_like": 19.33,
+      "temp_min": 17.77,
+      "temp_max": 19.54,
+      "pressure": 1012,
+      "humidity": 68,
+      "sea_level": 1012,
+      "grnd_level": 974
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 280
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262046,
+    "sys": {
+      "type": 1,
+      "id": 6482,
+      "country": "FR",
+      "sunrise": 1787200284,
+      "sunset": 1787251008
+    },
+    "timezone": 7200,
+    "id": 6441605,
+    "name": "Saint-Hippolyte",
+    "cod": 200,
+    "name_city": "Orschwiller"
+  },
+  {
+    "coord": {
+      "lon": 7.358,
+      "lat": 48.0778
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.95,
+      "feels_like": 19.85,
+      "temp_min": 19.94,
+      "temp_max": 20.07,
+      "pressure": 1012,
+      "humidity": 71,
+      "sea_level": 1012,
+      "grnd_level": 971
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 280
+    },
+    "clouds": {
+      "all": 95
+    },
+    "dt": 1787262048,
+    "sys": {
+      "type": 1,
+      "id": 6482,
+      "country": "FR",
+      "sunrise": 1787200311,
+      "sunset": 1787250992
+    },
+    "timezone": 7200,
+    "id": 3024297,
+    "name": "Colmar",
+    "cod": 200,
+    "name_city": "Colmar"
+  },
+  {
+    "coord": {
+      "lon": 7.308,
+      "lat": 48.0448
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.93,
+      "feels_like": 19.86,
+      "temp_min": 19.9,
+      "temp_max": 20.04,
+      "pressure": 1012,
+      "humidity": 72,
+      "sea_level": 1012,
+      "grnd_level": 968
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 280
+    },
+    "clouds": {
+      "all": 94
+    },
+    "dt": 1787262050,
+    "sys": {
+      "type": 1,
+      "id": 6482,
+      "country": "FR",
+      "sunrise": 1787200327,
+      "sunset": 1787250999
+    },
+    "timezone": 7200,
+    "id": 3020324,
+    "name": "Eguisheim",
+    "cod": 200,
+    "name_city": "Eguisheim"
+  },
+  {
+    "coord": {
+      "lon": 6.0244,
+      "lat": 47.238
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 15.8,
+      "feels_like": 15.32,
+      "temp_min": 15.8,
+      "temp_max": 17.22,
+      "pressure": 1012,
+      "humidity": 72,
+      "sea_level": 1012,
+      "grnd_level": 973
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.51,
+      "deg": 179,
+      "gust": 1.43
+    },
+    "clouds": {
+      "all": 86
+    },
+    "dt": 1787262587,
+    "sys": {
+      "type": 2,
+      "id": 2003958,
+      "country": "FR",
+      "sunrise": 1787200738,
+      "sunset": 1787251204
+    },
+    "timezone": 7200,
+    "id": 3033123,
+    "name": "Besançon",
+    "cod": 200,
+    "name_city": "Besançon"
+  },
+  {
+    "coord": {
+      "lon": 5.0415,
+      "lat": 47.3216
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.8,
+      "feels_like": 16.08,
+      "temp_min": 16.8,
+      "temp_max": 16.8,
+      "pressure": 1013,
+      "humidity": 59,
+      "sea_level": 1013,
+      "grnd_level": 975
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 230
+    },
+    "clouds": {
+      "all": 36
+    },
+    "dt": 1787262589,
+    "sys": {
+      "type": 1,
+      "id": 6586,
+      "country": "FR",
+      "sunrise": 1787200964,
+      "sunset": 1787251450
+    },
+    "timezone": 7200,
+    "id": 3006622,
+    "name": "Larrey",
+    "cod": 200,
+    "name_city": "Dijon"
+  },
+  {
+    "coord": {
+      "lon": 6.1289,
+      "lat": 45.8992
+    },
+    "weather": [
+      {
+        "id": 502,
+        "main": "Rain",
+        "description": "heavy intensity rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 20.08,
+      "feels_like": 20.44,
+      "temp_min": 20.01,
+      "temp_max": 20.08,
+      "pressure": 1013,
+      "humidity": 88,
+      "sea_level": 1013,
+      "grnd_level": 928
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.66,
+      "deg": 310
+    },
+    "rain": {
+      "1h": 5.96
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787261809,
+    "sys": {
+      "type": 1,
+      "id": 6500,
+      "country": "FR",
+      "sunrise": 1787200876,
+      "sunset": 1787251016
+    },
+    "timezone": 7200,
+    "id": 3037543,
+    "name": "Annecy",
+    "cod": 200,
+    "name_city": "Annecy"
+  },
+  {
+    "coord": {
+      "lon": 5.7358,
+      "lat": 45.1876
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.32,
+      "feels_like": 19.76,
+      "temp_min": 19.32,
+      "temp_max": 19.32,
+      "pressure": 1014,
+      "humidity": 94,
+      "sea_level": 1014,
+      "grnd_level": 919
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 0.45,
+      "deg": 356,
+      "gust": 4.02
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262056,
+    "sys": {
+      "type": 2,
+      "id": 2004515,
+      "country": "FR",
+      "sunrise": 1787201054,
+      "sunset": 1787251027
+    },
+    "timezone": 7200,
+    "id": 6454071,
+    "name": "Grenoble",
+    "cod": 200,
+    "name_city": "Grenoble"
+  },
+  {
+    "coord": {
+      "lon": 4.832,
+      "lat": 45.7578
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 21.46,
+      "feels_like": 21.67,
+      "temp_min": 18.42,
+      "temp_max": 22.09,
+      "pressure": 1012,
+      "humidity": 77,
+      "sea_level": 1012,
+      "grnd_level": 981
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.34,
+      "deg": 187,
+      "gust": 0
+    },
+    "clouds": {
+      "all": 82
+    },
+    "dt": 1787262002,
+    "sys": {
+      "type": 2,
+      "id": 2101774,
+      "country": "FR",
+      "sunrise": 1787201205,
+      "sunset": 1787251310
+    },
+    "timezone": 7200,
+    "id": 8015556,
+    "name": "Vieux Lyon",
+    "cod": 200,
+    "name_city": "Lyon"
+  },
+  {
+    "coord": {
+      "lon": 6.0057,
+      "lat": 43.5581
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 20.54,
+      "feels_like": 21.1,
+      "temp_min": 20.53,
+      "temp_max": 21.39,
+      "pressure": 1011,
+      "humidity": 94,
+      "sea_level": 1011,
+      "grnd_level": 968
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.63,
+      "deg": 315,
+      "gust": 1.52
+    },
+    "clouds": {
+      "all": 78
+    },
+    "dt": 1787262059,
+    "sys": {
+      "type": 5,
+      "id": 50014318,
+      "country": "FR",
+      "sunrise": 1787201172,
+      "sunset": 1787250780
+    },
+    "timezone": 7200,
+    "id": 3034918,
+    "name": "Barjols",
+    "cod": 200,
+    "name_city": "Barjols"
+  },
+  {
+    "coord": {
+      "lon": 6.5134,
+      "lat": 43.8465
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 17.84,
+      "feels_like": 17.9,
+      "temp_min": 17.84,
+      "temp_max": 17.84,
+      "pressure": 1013,
+      "humidity": 85,
+      "sea_level": 1013,
+      "grnd_level": 887
+    },
+    "visibility": 4741,
+    "wind": {
+      "speed": 1.67,
+      "deg": 5,
+      "gust": 1.34
+    },
+    "clouds": {
+      "all": 91
+    },
+    "dt": 1787262061,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787201018,
+      "sunset": 1787250689
+    },
+    "timezone": 7200,
+    "id": 3028382,
+    "name": "Castellane",
+    "cod": 200,
+    "name_city": "Castellane"
+  },
+  {
+    "coord": {
+      "lon": 6.1503,
+      "lat": 43.5281
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 21.07,
+      "feels_like": 21.61,
+      "temp_min": 20.56,
+      "temp_max": 21.51,
+      "pressure": 1011,
+      "humidity": 91,
+      "sea_level": 1011,
+      "grnd_level": 972
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.18,
+      "deg": 330,
+      "gust": 1.21
+    },
+    "clouds": {
+      "all": 76
+    },
+    "dt": 1787262599,
+    "sys": {
+      "type": 2,
+      "id": 2006427,
+      "country": "FR",
+      "sunrise": 1787201140,
+      "sunset": 1787250742
+    },
+    "timezone": 7200,
+    "id": 3023410,
+    "name": "Cotignac",
+    "cod": 200,
+    "name_city": "Cotignac"
+  },
+  {
+    "coord": {
+      "lon": 6.2218,
+      "lat": 43.846
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.36,
+      "feels_like": 18.5,
+      "temp_min": 18.36,
+      "temp_max": 18.36,
+      "pressure": 1013,
+      "humidity": 86,
+      "sea_level": 1013,
+      "grnd_level": 917
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.5,
+      "deg": 71,
+      "gust": 1.4
+    },
+    "clouds": {
+      "all": 77
+    },
+    "dt": 1787262064,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787201088,
+      "sunset": 1787250759
+    },
+    "timezone": 7200,
+    "id": 2996533,
+    "name": "Majastres",
+    "cod": 200,
+    "name_city": "Moustiers-Sainte-Marie"
+  },
+  {
+    "coord": {
+      "lon": 6.1518,
+      "lat": 43.7589
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.94,
+      "feels_like": 19.16,
+      "temp_min": 18.94,
+      "temp_max": 19.79,
+      "pressure": 1012,
+      "humidity": 87,
+      "sea_level": 1012,
+      "grnd_level": 937
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.25,
+      "deg": 35,
+      "gust": 1.29
+    },
+    "clouds": {
+      "all": 77
+    },
+    "dt": 1787262065,
+    "sys": {
+      "type": 5,
+      "id": 50014318,
+      "country": "FR",
+      "sunrise": 1787201115,
+      "sunset": 1787250766
+    },
+    "timezone": 7200,
+    "id": 3034556,
+    "name": "Bauduen",
+    "cod": 200,
+    "name_city": "Sainte-Croix-du-Verdon"
+  },
+  {
+    "coord": {
+      "lon": 6.1795,
+      "lat": 43.5674
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 20.43,
+      "feels_like": 20.85,
+      "temp_min": 19.88,
+      "temp_max": 21.05,
+      "pressure": 1011,
+      "humidity": 89,
+      "sea_level": 1011,
+      "grnd_level": 964
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.2,
+      "deg": 354,
+      "gust": 1.06
+    },
+    "clouds": {
+      "all": 76
+    },
+    "dt": 1787262067,
+    "sys": {
+      "type": 2,
+      "id": 2006427,
+      "country": "FR",
+      "sunrise": 1787201129,
+      "sunset": 1787250739
+    },
+    "timezone": 7200,
+    "id": 2976472,
+    "name": "Salernes",
+    "cod": 200,
+    "name_city": "Sillans-la-Cascade"
+  },
+  {
+    "coord": {
+      "lon": 5.984,
+      "lat": 43.8379
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 20.68,
+      "feels_like": 21.08,
+      "temp_min": 20.68,
+      "temp_max": 20.68,
+      "pressure": 1012,
+      "humidity": 87,
+      "sea_level": 1012,
+      "grnd_level": 954
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.7,
+      "deg": 9,
+      "gust": 1.89
+    },
+    "clouds": {
+      "all": 78
+    },
+    "dt": 1787262069,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787201146,
+      "sunset": 1787250815
+    },
+    "timezone": 7200,
+    "id": 2971033,
+    "name": "Valensole",
+    "cod": 200,
+    "name_city": "Valensole"
+  },
+  {
+    "coord": {
+      "lon": 6.3419,
+      "lat": 43.1507
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 24.16,
+      "feels_like": 24.93,
+      "temp_min": 21.99,
+      "temp_max": 25.14,
+      "pressure": 1011,
+      "humidity": 88,
+      "sea_level": 1011,
+      "grnd_level": 995
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.03,
+      "deg": 0
+    },
+    "clouds": {
+      "all": 92
+    },
+    "dt": 1787262070,
+    "sys": {
+      "type": 2,
+      "id": 2006377,
+      "country": "FR",
+      "sunrise": 1787201135,
+      "sunset": 1787250655
+    },
+    "timezone": 7200,
+    "id": 3031532,
+    "name": "Bormes-les-Mimosas",
+    "cod": 200,
+    "name_city": "Bormes-les-Mimosas"
+  },
+  {
+    "coord": {
+      "lon": 5.5396,
+      "lat": 43.214
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 24.34,
+      "feels_like": 24.84,
+      "temp_min": 23.56,
+      "temp_max": 24.69,
+      "pressure": 1010,
+      "humidity": 77,
+      "sea_level": 1010,
+      "grnd_level": 1000
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.03,
+      "deg": 190,
+      "gust": 5.12
+    },
+    "clouds": {
+      "all": 94
+    },
+    "dt": 1787262072,
+    "sys": {
+      "type": 2,
+      "id": 2038928,
+      "country": "FR",
+      "sunrise": 1787201321,
+      "sunset": 1787250854
+    },
+    "timezone": 7200,
+    "id": 3028431,
+    "name": "Cassis",
+    "cod": 200,
+    "name_city": "Cassis"
+  },
+  {
+    "coord": {
+      "lon": 5.3778,
+      "lat": 43.2964
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 25.15,
+      "feels_like": 25.65,
+      "temp_min": 23.59,
+      "temp_max": 25.87,
+      "pressure": 1010,
+      "humidity": 74,
+      "sea_level": 1010,
+      "grnd_level": 1004
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.3,
+      "deg": 185,
+      "gust": 4.77
+    },
+    "clouds": {
+      "all": 92
+    },
+    "dt": 1787262610,
+    "sys": {
+      "type": 2,
+      "id": 80238,
+      "country": "FR",
+      "sunrise": 1787201351,
+      "sunset": 1787250902
+    },
+    "timezone": 7200,
+    "id": 2995469,
+    "name": "Marseille",
+    "cod": 200,
+    "name_city": "Marseille"
+  },
+  {
+    "coord": {
+      "lon": 5.4475,
+      "lat": 43.5298
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 23.13,
+      "feels_like": 23.3,
+      "temp_min": 22.43,
+      "temp_max": 24.71,
+      "pressure": 1010,
+      "humidity": 69,
+      "sea_level": 1010,
+      "grnd_level": 979
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.9,
+      "deg": 178,
+      "gust": 3.19
+    },
+    "clouds": {
+      "all": 73
+    },
+    "dt": 1787262075,
+    "sys": {
+      "type": 2,
+      "id": 2006832,
+      "country": "FR",
+      "sunrise": 1787201309,
+      "sunset": 1787250910
+    },
+    "timezone": 7200,
+    "id": 3038354,
+    "name": "Aix-en-Provence",
+    "cod": 200,
+    "name_city": "Aix-en-Provence"
+  },
+  {
+    "coord": {
+      "lon": 4.8059,
+      "lat": 43.9492
+    },
+    "weather": [
+      {
+        "id": 502,
+        "main": "Rain",
+        "description": "heavy intensity rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 23.25,
+      "feels_like": 23.77,
+      "temp_min": 22.21,
+      "temp_max": 24.05,
+      "pressure": 1010,
+      "humidity": 82,
+      "sea_level": 1010,
+      "grnd_level": 1003
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.09,
+      "deg": 350
+    },
+    "rain": {
+      "1h": 7.99
+    },
+    "clouds": {
+      "all": 61
+    },
+    "dt": 1787262077,
+    "sys": {
+      "type": 2,
+      "id": 2024181,
+      "country": "FR",
+      "sunrise": 1787201417,
+      "sunset": 1787251110
+    },
+    "timezone": 7200,
+    "id": 3035681,
+    "name": "Avignon",
+    "cod": 200,
+    "name_city": "Avignon"
+  },
+  {
+    "coord": {
+      "lon": 4.4197,
+      "lat": 44.0121
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 22.34,
+      "feels_like": 22.8,
+      "temp_min": 22.34,
+      "temp_max": 24.71,
+      "pressure": 1010,
+      "humidity": 83,
+      "sea_level": 1010,
+      "grnd_level": 993
+    },
+    "visibility": 8508,
+    "wind": {
+      "speed": 1.07,
+      "deg": 61,
+      "gust": 1.81
+    },
+    "clouds": {
+      "all": 76
+    },
+    "dt": 1787261940,
+    "sys": {
+      "type": 2,
+      "id": 2024181,
+      "country": "FR",
+      "sunrise": 1787201503,
+      "sunset": 1787251210
+    },
+    "timezone": 7200,
+    "id": 2971258,
+    "name": "Uzès",
+    "cod": 200,
+    "name_city": "Uzès"
+  },
+  {
+    "coord": {
+      "lon": 4.3601,
+      "lat": 43.8374
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 25.22,
+      "feels_like": 25.83,
+      "temp_min": 25.22,
+      "temp_max": 25.22,
+      "pressure": 1010,
+      "humidity": 78,
+      "sea_level": 1010,
+      "grnd_level": 1002
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.09,
+      "deg": 60
+    },
+    "clouds": {
+      "all": 92
+    },
+    "dt": 1787262080,
+    "sys": {
+      "type": 1,
+      "id": 6599,
+      "country": "FR",
+      "sunrise": 1787201536,
+      "sunset": 1787251205
+    },
+    "timezone": 7200,
+    "id": 2990363,
+    "name": "Nîmes",
+    "cod": 200,
+    "name_city": "Nîmes"
+  },
+  {
+    "coord": {
+      "lon": 4.1915,
+      "lat": 43.5662
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 25.78,
+      "feels_like": 26.11,
+      "temp_min": 24.43,
+      "temp_max": 25.98,
+      "pressure": 1009,
+      "humidity": 65,
+      "sea_level": 1009,
+      "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.66,
+      "deg": 360
+    },
+    "clouds": {
+      "all": 56
+    },
+    "dt": 1787262082,
+    "sys": {
+      "type": 1,
+      "id": 6518,
+      "country": "FR",
+      "sunrise": 1787201607,
+      "sunset": 1787251215
+    },
+    "timezone": 7200,
+    "id": 3038493,
+    "name": "Aigues-Mortes",
+    "cod": 200,
+    "name_city": "Aigues-Mortes"
+  },
+  {
+    "coord": {
+      "lon": 4.4277,
+      "lat": 43.4516
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 25.19,
+      "feels_like": 25.93,
+      "temp_min": 25.19,
+      "temp_max": 25.19,
+      "pressure": 1010,
+      "humidity": 83,
+      "sea_level": 1010,
+      "grnd_level": 1010
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.42,
+      "deg": 207,
+      "gust": 8.28
+    },
+    "clouds": {
+      "all": 26
+    },
+    "dt": 1787262083,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787201562,
+      "sunset": 1787251146
+    },
+    "timezone": 7200,
+    "id": 2980325,
+    "name": "Saintes-Maries-de-la-Mer",
+    "cod": 200,
+    "name_city": "Saintes-Maries-de-la-Mer"
+  },
+  {
+    "coord": {
+      "lon": 3.0832,
+      "lat": 42.5251
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 25.74,
+      "feels_like": 26.54,
+      "temp_min": 25.19,
+      "temp_max": 26.7,
+      "pressure": 1010,
+      "humidity": 83,
+      "sea_level": 1010,
+      "grnd_level": 990
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.56,
+      "deg": 315,
+      "gust": 7.57
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262085,
+    "sys": {
+      "type": 2,
+      "id": 2020519,
+      "country": "FR",
+      "sunrise": 1787201984,
+      "sunset": 1787251370
+    },
+    "timezone": 7200,
+    "id": 3024314,
+    "name": "Collioure",
+    "cod": 200,
+    "name_city": "Collioure"
+  },
+  {
+    "coord": {
+      "lon": 2.3491,
+      "lat": 43.213
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 22.06,
+      "feels_like": 22.23,
+      "temp_min": 22.06,
+      "temp_max": 22.6,
+      "pressure": 1012,
+      "humidity": 73,
+      "sea_level": 1012,
+      "grnd_level": 983
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 10.29,
+      "deg": 290,
+      "gust": 15.95
+    },
+    "clouds": {
+      "all": 72
+    },
+    "dt": 1787262087,
+    "sys": {
+      "type": 1,
+      "id": 6513,
+      "country": "FR",
+      "sunrise": 1787202087,
+      "sunset": 1787251619
+    },
+    "timezone": 7200,
+    "id": 3028641,
+    "name": "Carcassonne",
+    "cod": 200,
+    "name_city": "Carcassonne"
+  },
+  {
+    "coord": {
+      "lon": 1.5675,
+      "lat": 42.8816
+    },
+    "weather": [
+      {
+        "id": 501,
+        "main": "Rain",
+        "description": "moderate rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 14.73,
+      "feels_like": 14.56,
+      "temp_min": 14.73,
+      "temp_max": 15.95,
+      "pressure": 1014,
+      "humidity": 88,
+      "sea_level": 1014,
+      "grnd_level": 885
+    },
+    "wind": {
+      "speed": 1.29,
+      "deg": 328,
+      "gust": 2.82
+    },
+    "rain": {
+      "1h": 1.27
+    },
+    "clouds": {
+      "all": 97
+    },
+    "dt": 1787262088,
+    "sys": {
+      "type": 2,
+      "id": 2106908,
+      "country": "FR",
+      "sunrise": 1787202310,
+      "sunset": 1787251771
+    },
+    "timezone": 7200,
+    "id": 6426331,
+    "name": "Tarascon-sur-Ariège",
+    "cod": 200,
+    "name_city": "Bédeilhac-et-Aynat"
+  },
+  {
+    "coord": {
+      "lon": 2.3447,
+      "lat": 49.8874
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 15.51,
+      "feels_like": 15.31,
+      "temp_min": 15.51,
+      "temp_max": 15.51,
+      "pressure": 1010,
+      "humidity": 84,
+      "sea_level": 1010,
+      "grnd_level": 999
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 2.77,
+      "deg": 240,
+      "gust": 6.36
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262090,
+    "sys": {
+      "type": 1,
+      "id": 6446,
+      "country": "FR",
+      "sunrise": 1787201271,
+      "sunset": 1787252437
+    },
+    "timezone": 7200,
+    "id": 3029003,
+    "name": "Camon",
+    "cod": 200,
+    "name_city": "Camon"
+  },
+  {
+    "coord": {
+      "lon": 1.3936,
+      "lat": 43.15
+    },
+    "weather": [
+      {
+        "id": 502,
+        "main": "Rain",
+        "description": "heavy intensity rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.11,
+      "feels_like": 19.3,
+      "temp_min": 16.81,
+      "temp_max": 19.12,
+      "pressure": 1014,
+      "humidity": 85,
+      "sea_level": 1014,
+      "grnd_level": 975
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.29,
+      "deg": 297,
+      "gust": 7.81
+    },
+    "rain": {
+      "1h": 6.74
+    },
+    "clouds": {
+      "all": 80
+    },
+    "dt": 1787262091,
+    "sys": {
+      "type": 2,
+      "id": 20300,
+      "country": "FR",
+      "sunrise": 1787202324,
+      "sunset": 1787251841
+    },
+    "timezone": 7200,
+    "id": 6446851,
+    "name": "Artigat",
+    "cod": 200,
+    "name_city": "Le Carla-Bayle"
+  },
+  {
+    "coord": {
+      "lon": 1.6054,
+      "lat": 42.9639
+    },
+    "weather": [
+      {
+        "id": 500,
+        "main": "Rain",
+        "description": "light rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 17.67,
+      "feels_like": 17.82,
+      "temp_min": 17.66,
+      "temp_max": 19.3,
+      "pressure": 1014,
+      "humidity": 89,
+      "sea_level": 1014,
+      "grnd_level": 924
+    },
+    "wind": {
+      "speed": 1.86,
+      "deg": 308,
+      "gust": 4.19
+    },
+    "rain": {
+      "1h": 0.27
+    },
+    "clouds": {
+      "all": 93
+    },
+    "dt": 1787262093,
+    "sys": {
+      "type": 2,
+      "id": 2106908,
+      "country": "FR",
+      "sunrise": 1787202293,
+      "sunset": 1787251771
+    },
+    "timezone": 7200,
+    "id": 3018174,
+    "name": "Foix",
+    "cod": 200,
+    "name_city": "Foix"
+  },
+  {
+    "coord": {
+      "lon": 1.3613,
+      "lat": 43.0795
+    },
+    "weather": [
+      {
+        "id": 501,
+        "main": "Rain",
+        "description": "moderate rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.63,
+      "feels_like": 19.87,
+      "temp_min": 18.41,
+      "temp_max": 19.63,
+      "pressure": 1014,
+      "humidity": 85,
+      "sea_level": 1014,
+      "grnd_level": 960
+    },
+    "visibility": 5013,
+    "wind": {
+      "speed": 3.23,
+      "deg": 297,
+      "gust": 6.45
+    },
+    "rain": {
+      "1h": 3.99
+    },
+    "clouds": {
+      "all": 84
+    },
+    "dt": 1787262095,
+    "sys": {
+      "type": 2,
+      "id": 20300,
+      "country": "FR",
+      "sunrise": 1787202339,
+      "sunset": 1787251841
+    },
+    "timezone": 7200,
+    "id": 6446851,
+    "name": "Artigat",
+    "cod": 200,
+    "name_city": "Le Mas-d'Azil"
+  },
+  {
+    "coord": {
+      "lon": 0.6719,
+      "lat": 43.7458
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 20.27,
+      "feels_like": 20.94,
+      "temp_min": 18.89,
+      "temp_max": 20.27,
+      "pressure": 1015,
+      "humidity": 99,
+      "sea_level": 1015,
+      "grnd_level": 996
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 3.46,
+      "deg": 283,
+      "gust": 4.89
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262096,
+    "sys": {
+      "type": 2,
+      "id": 2016488,
+      "country": "FR",
+      "sunrise": 1787202432,
+      "sunset": 1787252079
+    },
+    "timezone": 7200,
+    "id": 6432068,
+    "name": "Preignan",
+    "cod": 200,
+    "name_city": "Mirepoix"
+  },
+  {
+    "coord": {
+      "lon": 1.8333,
+      "lat": 42.8714
+    },
+    "weather": [
+      {
+        "id": 500,
+        "main": "Rain",
+        "description": "light rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 15.37,
+      "feels_like": 15.21,
+      "temp_min": 15.37,
+      "temp_max": 15.37,
+      "pressure": 1014,
+      "humidity": 86,
+      "sea_level": 1014,
+      "grnd_level": 905
+    },
+    "visibility": 5777,
+    "wind": {
+      "speed": 1.51,
+      "deg": 253,
+      "gust": 2.78
+    },
+    "rain": {
+      "1h": 0.16
+    },
+    "clouds": {
+      "all": 99
+    },
+    "dt": 1787262518,
+    "sys": {
+      "type": 2,
+      "id": 2001435,
+      "country": "FR",
+      "sunrise": 1787202248,
+      "sunset": 1787251706
+    },
+    "timezone": 7200,
+    "id": 3005712,
+    "name": "Lavelanet",
+    "cod": 200,
+    "name_city": "Montségur"
+  },
+  {
+    "coord": {
+      "lon": 1.5911,
+      "lat": 42.8093
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 16.53,
+      "feels_like": 16.48,
+      "temp_min": 16.53,
+      "temp_max": 16.53,
+      "pressure": 1014,
+      "humidity": 86,
+      "sea_level": 1014,
+      "grnd_level": 863
+    },
+    "visibility": 1775,
+    "wind": {
+      "speed": 0.94,
+      "deg": 332,
+      "gust": 2.02
+    },
+    "clouds": {
+      "all": 99
+    },
+    "dt": 1787262099,
+    "sys": {
+      "type": 2,
+      "id": 2106908,
+      "country": "FR",
+      "sunrise": 1787202312,
+      "sunset": 1787251758
+    },
+    "timezone": 7200,
+    "id": 3018172,
+    "name": "Arrondissement de Foix",
+    "cod": 200,
+    "name_city": "Niaux"
+  },
+  {
+    "coord": {
+      "lon": 1.1355,
+      "lat": 43.0025
+    },
+    "weather": [
+      {
+        "id": 502,
+        "main": "Rain",
+        "description": "heavy intensity rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.44,
+      "feels_like": 18.61,
+      "temp_min": 16.68,
+      "temp_max": 18.69,
+      "pressure": 1014,
+      "humidity": 87,
+      "sea_level": 1014,
+      "grnd_level": 935
+    },
+    "wind": {
+      "speed": 2.34,
+      "deg": 301,
+      "gust": 5.91
+    },
+    "rain": {
+      "1h": 5.51
+    },
+    "clouds": {
+      "all": 88
+    },
+    "dt": 1787262101,
+    "sys": {
+      "type": 2,
+      "id": 20300,
+      "country": "FR",
+      "sunrise": 1787202401,
+      "sunset": 1787251887
+    },
+    "timezone": 7200,
+    "id": 2978760,
+    "name": "Saint-Lizier",
+    "cod": 200,
+    "name_city": "Saint-Lizier"
+  },
+  {
+    "coord": {
+      "lon": 1.4955,
+      "lat": 43.1697
+    },
+    "weather": [
+      {
+        "id": 502,
+        "main": "Rain",
+        "description": "heavy intensity rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.72,
+      "feels_like": 20.1,
+      "temp_min": 19.72,
+      "temp_max": 19.72,
+      "pressure": 1014,
+      "humidity": 90,
+      "sea_level": 1014,
+      "grnd_level": 975
+    },
+    "visibility": 9874,
+    "wind": {
+      "speed": 4.49,
+      "deg": 299,
+      "gust": 7.98
+    },
+    "rain": {
+      "1h": 5.91
+    },
+    "clouds": {
+      "all": 77
+    },
+    "dt": 1787262103,
+    "sys": {
+      "type": 2,
+      "id": 20300,
+      "country": "FR",
+      "sunrise": 1787202297,
+      "sunset": 1787251819
+    },
+    "timezone": 7200,
+    "id": 3036674,
+    "name": "Artigat",
+    "cod": 200,
+    "name_city": "Saint-Martin-d'Oydes"
+  },
+  {
+    "coord": {
+      "lon": 1.6043,
+      "lat": 42.8492
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 17.2,
+      "feels_like": 17.25,
+      "temp_min": 17.2,
+      "temp_max": 17.2,
+      "pressure": 1014,
+      "humidity": 87,
+      "sea_level": 1014,
+      "grnd_level": 875
+    },
+    "visibility": 693,
+    "wind": {
+      "speed": 1.03,
+      "deg": 325,
+      "gust": 2.33
+    },
+    "clouds": {
+      "all": 98
+    },
+    "dt": 1787262104,
+    "sys": {
+      "type": 2,
+      "id": 2106908,
+      "country": "FR",
+      "sunrise": 1787202305,
+      "sunset": 1787251759
+    },
+    "timezone": 7200,
+    "id": 6426331,
+    "name": "Tarascon-sur-Ariège",
+    "cod": 200,
+    "name_city": "Tarascon-sur-Ariège"
+  },
+  {
+    "coord": {
+      "lon": 1.4442,
+      "lat": 43.6045
+    },
+    "weather": [
+      {
+        "id": 501,
+        "main": "Rain",
+        "description": "moderate rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.97,
+      "feels_like": 19.38,
+      "temp_min": 18.97,
+      "temp_max": 18.97,
+      "pressure": 1014,
+      "humidity": 94,
+      "sea_level": 1014,
+      "grnd_level": 992
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.12,
+      "deg": 30
+    },
+    "rain": {
+      "1h": 3.89
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262563,
+    "sys": {
+      "type": 1,
+      "id": 6467,
+      "country": "FR",
+      "sunrise": 1787202262,
+      "sunset": 1787251878
+    },
+    "timezone": 7200,
+    "id": 2972315,
+    "name": "Toulouse",
+    "cod": 200,
+    "name_city": "Toulouse"
+  },
+  {
+    "coord": {
+      "lon": 1.35,
+      "lat": 44.0167
+    },
+    "weather": [
+      {
+        "id": 503,
+        "main": "Rain",
+        "description": "very heavy rain",
+        "icon": "10n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 21.16,
+      "feels_like": 21.68,
+      "temp_min": 21.16,
+      "temp_max": 21.16,
+      "pressure": 1014,
+      "humidity": 90,
+      "sea_level": 1014,
+      "grnd_level": 1001
+    },
+    "visibility": 7125,
+    "wind": {
+      "speed": 4.07,
+      "deg": 298,
+      "gust": 7.52
+    },
+    "rain": {
+      "1h": 27.34
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262603,
+    "sys": {
+      "country": "FR",
+      "sunrise": 1787202240,
+      "sunset": 1787251946
+    },
+    "timezone": 7200,
+    "id": 2993002,
+    "name": "Montauban",
+    "cod": 200,
+    "name_city": "Montauban"
+  },
+  {
+    "coord": {
+      "lon": -1.56,
+      "lat": 43.48
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.17,
+      "feels_like": 18.5,
+      "temp_min": 18.17,
+      "temp_max": 18.72,
+      "pressure": 1015,
+      "humidity": 94,
+      "sea_level": 1015,
+      "grnd_level": 1009
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 0.51,
+      "deg": 0
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262166,
+    "sys": {
+      "type": 1,
+      "id": 6478,
+      "country": "FR",
+      "sunrise": 1787202997,
+      "sunset": 1787252585
+    },
+    "timezone": 7200,
+    "id": 3032797,
+    "name": "Biarritz",
+    "cod": 200,
+    "name_city": "Biarritz"
+  },
+  {
+    "coord": {
+      "lon": -1.4737,
+      "lat": 43.4945
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 18.42,
+      "feels_like": 18.77,
+      "temp_min": 18.42,
+      "temp_max": 18.97,
+      "pressure": 1015,
+      "humidity": 94,
+      "sea_level": 1015,
+      "grnd_level": 1010
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 0.51,
+      "deg": 0
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262111,
+    "sys": {
+      "type": 1,
+      "id": 6478,
+      "country": "FR",
+      "sunrise": 1787202975,
+      "sunset": 1787252566
+    },
+    "timezone": 7200,
+    "id": 3034475,
+    "name": "Bayonne",
+    "cod": 200,
+    "name_city": "Bayonne"
+  },
+  {
+    "coord": {
+      "lon": -1.1516,
+      "lat": 46.1597
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 19.98,
+      "feels_like": 20.02,
+      "temp_min": 19.62,
+      "temp_max": 20.07,
+      "pressure": 1013,
+      "humidity": 76,
+      "sea_level": 1013,
+      "grnd_level": 1013
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 6.17,
+      "deg": 290
+    },
+    "clouds": {
+      "all": 100
+    },
+    "dt": 1787262648,
+    "sys": {
+      "type": 1,
+      "id": 6458,
+      "country": "FR",
+      "sunrise": 1787202594,
+      "sunset": 1787252792
+    },
+    "timezone": 7200,
+    "id": 3006787,
+    "name": "La Rochelle",
+    "cod": 200,
+    "name_city": "La Rochelle"
+  }
+]

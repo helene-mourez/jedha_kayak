@@ -1,0 +1,30 @@
+sélecteurs
+nom de l'hôtel
+<div data-testid="title" class="b87c397a13 a3e0b4ffd1">Hôtel des Arceaux</div> exérieur du html
+
+sélecteur 
+hotel_names = soup.find_all("div", {"data-testid": "title"})
+for hotel in hotel_names:
+    print(hotel.text.strip())
+	
+prix
+	<span data-testid="price-and-discounted-price" aria-hidden="true" class="b87c397a13 f2f358d1de ab607752a2">€&nbsp;82</span>
+	
+	property card
+	
+<a target="_blank" rel="noopener noreferrer" data-testid="review-score-link" tabindex="0" href="https://www.booking.com/hotel/fr/la-provencale-valensole1.fr.html?label=msn-8aGmFKcvjur7ORXD1T41Jg-80676853483926%3Atikwd-80677028168879%3Aloc-66%3Anes%3Amte%3Alp186792%3Adec%3Acid518941944%3Aagid1290827950458860%3Aclkida60dbefb136f17da04a9d47302b61cd6&amp;aid=2369666&amp;ucfs=1&amp;arphpl=1&amp;checkin=2026-08-21&amp;checkout=2026-08-22&amp;dest_id=-1474456&amp;dest_type=city&amp;group_adults=2&amp;req_adults=2&amp;no_rooms=1&amp;group_children=0&amp;req_children=0&amp;hpos=1&amp;hapos=1&amp;sr_order=popularity&amp;nflt=distance%3D3000&amp;srpvid=8f1572c773c401c0&amp;srepoch=1787329857&amp;all_sr_blocks=1177633501_390278708_2_2_0&amp;highlighted_blocks=1177633501_390278708_2_2_0&amp;matching_block_id=1177633501_390278708_2_2_0&amp;sr_pri_blocks=1177633501_390278708_2_2_0__8222&amp;from=searchresults" class="de576f5064 bef8628e61 ef3027b3ae e0d8514d4d"><span><div data-testid="review-score" style="--bui_stack_spaced_gap--s: 2;" class="f6e3a11b0d c465553d73 a81870d302 ac30880487 e95943ce9b afec5495f3 b889bab3b1"><div class="bc946a29db">Avec une note de 8,7</div><div aria-hidden="true" class="f63b14ab7a dff2e52086">8,7</div><div aria-hidden="false" class="aa225776f2 ca9d921c46 e951e75167"><div class="f63b14ab7a f546354b44 becbee2f63">Superbe </div><div class="fff1944c52 fb14de7f14 eaa8455879">75 expériences vécues</div></div></div></span></a>
+	
+ # hotel cards
+    cards = soup.find_all("div", {"data-testid": "property-card"})
+    for card in cards:
+        nom = card.find("div", {"data-testid": "title"})
+        prix = card.find("span", {"data-testid": "price-and-discounted-price"})
+        note = card.find("div", {"data-testid": "review-score"})
+        adresse = card.find("span", {"data-testid": "address-link"})
+        lien = card.find("a", {"data-testid": "title-link"})
+        print(nom.text.strip() if nom else None)
+        print(prix.text.strip() if prix else None)
+        print(note.text.strip() if note else None)
+        print(adresse.text.strip() if adresse else None)
+        print(lien["href"] if lien else None)
+

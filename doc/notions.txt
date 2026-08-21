@@ -1,0 +1,61 @@
+REQUETES API
+------------
+
+python
+requests.get(url, params={...}, headers={...})   # GET avec paramètres
+requests.post(url, json={...}, headers={...})    # POST avec body JSON
+r.status_code   # code HTTP (200, 401, 404...)
+r.json()        # parse la réponse en dict/list
+r.text          # réponse brute en texte
+
+bash
+curl "url?param1=val1&param2=val2"                     # GET simple
+curl -H "Header: valeur" "url"                          # avec en-tête
+curl -X POST -d '{"key":"val"}' -H "Content-Type: application/json" "url"  # POST
+curl -s "url" | jq                                       # formater le JSON
+curl --get --data-urlencode "q=val avec espace" "url"    # encoder params
+
+Bonnes pratiques
+
+Toujours mettre l'URL entre guillemets (éviter que & coupe la commande).
+Vérifier status_code/code HTTP avant de parser (200 = ok, 401 = auth, 404 = introuvable, 302 = redirection).
+Ajouter un User-Agent si l'API l'exige (ex: Nominatim).
+Respecter les limites de débit (time.sleep() entre appels).
+
+Mise à plat JSON
+----------------
+
+Inspecter d'abord :
+print(type(r.json()))
+print(r.json().keys())
+→ puis naviguer jusqu'à la liste d'objet
+
+Cas simple : un seul niveau imbriqué
+
+python
+df = pd.json_normalize(data)
+
+Aplati automatiquement les clés imbriquées en parent.enfant (ex: coord.lat, coord.lon).
+
+Cas avec une liste imbriquée (ex: weather: [...])
+json_normalize ne déplie pas les listes — il faut extraire manuellement :
+
+python
+df["weather.main"] = df["weather"].apply(lambda w: w[0]["main"])
+df["weather.description"] = df["weather"].apply(lambda w: w[0]["description"])
+df = df.drop(columns="weather")
+
+Cas où le JSON est une liste de dicts (ex: plusieurs villes)
+
+python
+df = pd.json_normalize(liste_de_dicts)
+
+Chaque dict devient une ligne du DataFrame.
+
+Vérifier la structure avant d'aplatir
+
+python
+import json
+print(json.dumps(data, indent=2))
+
+Aide à repérer les niveaux d'imbrication avant de choisir la méthode.

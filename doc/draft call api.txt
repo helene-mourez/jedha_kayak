@@ -1,0 +1,88 @@
+codex agent chat gpt 
+
+
+nominatim ok
+openweathermap
+BASH
+
+jedha@ASUS:/mnt/c/Users/LN/AppData/Local/Programs/Microsoft VS Code$ curl -H "User-Agent: projet_etude_dataviz (lnmourez@gmail.com)" \
+"https://nominatim.openstreetmap.org/search?county=fr&city=Bayeux&format=geocodejson&countrycodes=fr" | jq | grep -A 3 type
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   857  100   857    0     0    928      0 --:--:-- --:--:-- --:--:--   927
+  "type": "FeatureCollection",
+  "geocoding": {
+    "version": "0.1.0",
+    "attribution": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+--
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 286942707,
+          "osm_type": "relation",
+          "osm_id": 145776,
+          "osm_key": "boundary",
+          "osm_value": "administrative",
+          "type": "city",
+          "label": "Bayeux, Calvados, Normandie, France métropolitaine, 14400, France",
+          "name": "Bayeux"
+        }
+--
+        "type": "Point",
+        "coordinates": [
+          -0.7024738,
+          49.2764624
+--
+      "type": "Feature",
+      "properties": {
+        "geocoding": {
+          "place_id": 284288323,
+          "osm_type": "relation",
+          "osm_id": 1656892,
+          "osm_key": "boundary",
+          "osm_value": "administrative",
+          "type": "city",
+          "label": "Bayeux, Calvados, Normandie, France métropolitaine, France",
+          "name": "Bayeux"
+        }
+--
+        "type": "Point",
+        "coordinates": [
+          -0.791677,
+          49.2455634
+
+
+jedha@ASUS:/mnt/c/Users/LN/AppData/Local/Programs/Microsoft VS Code$ curl -I -H "User-Agent: projet_etude_dataviz (lnmourez@gmail.com)" "https://nominatim.openstreetmap.org/search?city=Bayeux&format=geocodejson&countrycodes=fr" 
+HTTP/2 200 
+content-type: application/json; charset=utf-8
+server: gunicorn/asgi
+x-nominatim-server: poldi.openstreetmap.org
+accept-ranges: bytes
+date: Wed, 19 Aug 2026 09:00:39 GMT
+via: 1.1 varnish
+age: 553
+x-served-by: cache-par-lfpb1150034-PAR, cache-par-lfpb1150040-PAR
+x-cache: MISS, HIT
+x-cache-hits: 0, 1
+x-timer: S1787130040.698656,VS0,VE3
+vary: accept-language, Accept-Encoding
+strict-transport-security: max-age=300
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 853
+
+curl -s --get --data-urlencode "q=Bayeux" --data-urlencode "format=geocodejson" --data-urlencode "countrycodes=fr" -H "User-Agent: projet_etude_dataviz (lnmourez@gmail.com)" "https://nominatim.openstreetmap.org/search" | jq -r '.features[] | "\(.properties.geocoding.name) \(.properties.geocoding.place_id) \(.geometry.coordinates[1]) \(.geometry.coordinates[0])"'
+Bayeux 283111531 49.2764624 -0.7024738
+Bayeux 283052768 49.2455634 -0.791677
+
+df.to_csv("bayeux.csv", index=False)
+
+
+PYTHON
+for feature in data["features"]:
+    name = feature["properties"]["geocoding"]["name"]
+    place_id = feature["properties"]["geocoding"]["place_id"]
+    lon, lat = feature["geometry"]["coordinates"]
+    print(name, place_id, lat, lon)
+	
+
+for 
