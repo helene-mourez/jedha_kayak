@@ -1,1 +1,7 @@
 .env
+data/
+doc/
+nb/
+sauve/
+sélecteurs.txt
+url.txt

@@ -32,7 +32,8 @@ with sync_playwright() as p:
         print(note.text.strip() if note else None)
         print(adresse.text.strip() if adresse else None)
         print(lien["href"] if lien else None)
-    
+
+    price = page.locator("xpath=//*[@id='bodyconstraint-inner']/div/div/div[2]/div[3]/div[2]/div[2]/div[3]/div[5]/div[1]/div[2]/div/div[2]/div[2]/div/div[1]/span").text_content()
 
 
     print(len(cards))
