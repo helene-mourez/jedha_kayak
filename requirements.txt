@@ -1,0 +1,16 @@
+# python3.13.9
+
+
+
+# get_cities
+
+requests==2.32.5
+# json 
+# time
+dotenv==1.1.0
+# os
+pandas==2.3.3
+
+
+
+# get weather
