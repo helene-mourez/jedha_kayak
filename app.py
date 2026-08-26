@@ -4,6 +4,7 @@ from get_weather import get_weather_info, weather_call_response_test
 from get_hotels import get_hotel_info
 from get_cities import get_city_info, nominatim_call_response_test
 from cities_list import cities_normalized, exercice_cities, booking_city_aliases, exercice_cities_booking_aliases
+from utilities_tools_store import standardize_city_text, get_text 
 
 import time
 import pandas as pd
@@ -12,22 +13,8 @@ import traceback
 import requests
 import unicodedata
 
-# df_weather = get_weather_info()
-
-# standardisation des noms de villes pour le merge
-def normalize_city_text(city):
-    city = city.lower()
-    city = unicodedata.normalize("NFKD", city)
-    city = "".join(c for c in city if not unicodedata.combining(c))
-    city = city.replace("-", " ")
-    city = city.replace("'", " ")
-    city = city.replace("’", " ")
-    city = " ".join(city.split())
-    city = city.replace("Le ", "")
-    return city
-
 cities = exercice_cities  # Liste des villes à traiter
-cities_standardized = [normalize_city_text(city) for city in cities]
+# cities_standardized = [standardize_city_text(city) for city in cities]
 
 checkin = "2026-08-28"
 checkout = "2026-08-29"
@@ -90,9 +77,9 @@ df_cities = df_cities.rename(columns={"name": "city"})
 df_weather = pd.DataFrame(weather_infos)
 df_hotels = pd.DataFrame(hotels_infos) # Crée un DataFrame final à partir de la liste des DataFrames d'hôtels
 
-df_cities["city"] = df_cities["city"].apply(normalize_city_text)
-df_weather["city"] = df_weather["city"].apply(normalize_city_text)
-df_hotels["city"] = df_cities["city"].apply(normalize_city_text)
+df_cities["city"] = df_cities["city"].apply(standardize_city_text)
+df_weather["city"] = df_weather["city"].apply(standardize_city_text)
+df_hotels["city"] = df_hotels["city"].apply(standardize_city_text)
 
 
 # region Vérification DataFrames avant merge

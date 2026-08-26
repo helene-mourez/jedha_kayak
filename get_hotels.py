@@ -7,6 +7,7 @@ import pandas as pd
 import re
 import json
 import cities_list
+from utilities_tools_store import get_text
 
 ##### Script tests ####
 # city = "carla bayle"
@@ -48,21 +49,7 @@ def get_hotel_info(city, checkin, checkout):
             timeout=30000
         )
         # print(f"Nombre d'hôtels trouvés : {hotel_cards.count()}")
-
-        def get_text(card, selector):
-            element = card.locator(selector)
-
-            if element.count() == 0:
-                return None
-
-            text = BeautifulSoup(
-                element.first.inner_text(),
-                "html.parser"
-            ).get_text(" ", strip=True)
-
-            return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
-
-
+        
         city_text = page.locator("h1").inner_text()
         city = city_text.split(":")[0].strip().replace("-", " ")
 
