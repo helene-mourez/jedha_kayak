@@ -1,0 +1,2 @@
+﻿base,visibility,dt,timezone,id,name,cod,city,coord.lon,coord.lat,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,main.sea_level,main.grnd_level,wind.speed,wind.deg,clouds.all,sys.type,sys.id,sys.country,sys.sunrise,sys.sunset,weather.0.id,weather.0.main,weather.0.description,weather.0.icon
+stations,10000,1787696417,7200,3038493,Aigues-Mortes,200,Aigues Mortes,4.1915,43.5662,23.69,24.02,21.66,23.98,1014,73,1014,1013,2.57,250,4,1,6518,FR,1787720412,1787769028,800,Clear,ciel dégagé,01n
