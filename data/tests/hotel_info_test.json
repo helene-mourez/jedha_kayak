@@ -1,0 +1,130 @@
+{
+    "city": "Le Havre",
+    "hotels": [
+        {
+            "name": "All Suites Appart Hôtel - Le Havre Centre - Les docks",
+            "price": "€ 86",
+            "score": "Avec une note de 8,4 8,4 Très bien 4 225 expériences vécues"
+        },
+        {
+            "name": "Novotel Le Havre Centre Gare",
+            "price": "€ 107",
+            "score": "Avec une note de 8,1 8,1 Très bien 998 expériences vécues"
+        },
+        {
+            "name": "Hilton Garden Inn Le Havre Centre",
+            "price": "€ 161",
+            "score": "Avec une note de 8,4 8,4 Très bien 2 126 expériences vécues"
+        },
+        {
+            "name": "Appart'hôtel Odalys City - Le Havre Centre Les Docks",
+            "price": "€ 66",
+            "score": "Avec une note de 8,4 8,4 Très bien 2 388 expériences vécues"
+        },
+        {
+            "name": "Ibis Budget Le Havre Les Docks",
+            "price": "€ 52",
+            "score": "Avec une note de 7,8 7,8 Bien 2 313 expériences vécues"
+        },
+        {
+            "name": "Hotel Spa Le Pasino",
+            "price": "€ 129",
+            "score": "Avec une note de 8,3 8,3 Très bien 887 expériences vécues"
+        },
+        {
+            "name": "Aparthotel Adagio Access Le Havre Les Docks",
+            "price": "€ 77",
+            "score": "Avec une note de 8,5 8,5 Très bien 919 expériences vécues"
+        },
+        {
+            "name": "UNISOTEL Le Havre",
+            "price": "€ 50",
+            "score": "Avec une note de 6,1 6,1 Note 1 302 expériences vécues"
+        },
+        {
+            "name": "Premiere Classe Le Havre Centre-LES DOCKS",
+            "price": "€ 48",
+            "score": "Avec une note de 7,7 7,7 Bien 2 708 expériences vécues"
+        },
+        {
+            "name": "The Originals Boutique, Hôtel Le Marignan,Le Havre Centre Gare",
+            "price": "€ 55",
+            "score": "Avec une note de 7,9 7,9 Bien 2 775 expériences vécues"
+        },
+        {
+            "name": "ibis Le Havre Centre",
+            "price": "€ 106",
+            "score": "Avec une note de 8,1 8,1 Très bien 2 019 expériences vécues"
+        },
+        {
+            "name": "Hôtel Richelieu, Le Havre Centre-Ville, Perret",
+            "price": "€ 81",
+            "score": "Avec une note de 7,9 7,9 Bien 916 expériences vécues"
+        },
+        {
+            "name": "The People Le Havre",
+            "price": "€ 71",
+            "score": "Avec une note de 8,2 8,2 Très bien 2 111 expériences vécues"
+        },
+        {
+            "name": "Le Petit Biscuit - Centre Historique du Havre",
+            "price": "€ 155",
+            "score": "Avec une note de 8,4 8,4 Très bien 37 expériences vécues"
+        },
+        {
+            "name": "Mercure Le Havre Centre Bassin Du Commerce",
+            "price": "€ 125",
+            "score": "Avec une note de 7,9 7,9 Bien 879 expériences vécues"
+        },
+        {
+            "name": "The Originals Boutique, Hôtel d'Angleterre, Le Havre, centre, plage",
+            "price": "€ 68",
+            "score": "Avec une note de 7,3 7,3 Bien 1 798 expériences vécues"
+        },
+        {
+            "name": "L'Escale Appartements et Suites en bord de Mer",
+            "price": "€ 67",
+            "score": "Avec une note de 8,4 8,4 Très bien 1 082 expériences vécues"
+        },
+        {
+            "name": "Nomad Hotel le Havre Centre Gare",
+            "price": "€ 83",
+            "score": "Avec une note de 8,5 8,5 Très bien 1 753 expériences vécues"
+        },
+        {
+            "name": "Birgit Hôtel Le Havre Centre",
+            "price": "€ 70",
+            "score": "Avec une note de 8,4 8,4 Très bien 2 530 expériences vécues"
+        },
+        {
+            "name": "JOST Hôtel Le Havre Centre Gare",
+            "price": "€ 80",
+            "score": "Avec une note de 8,5 8,5 Très bien 1 559 expériences vécues"
+        },
+        {
+            "name": "Zenitude Hôtel-Résidences Le Havre Centre",
+            "price": "€ 55",
+            "score": "Avec une note de 6,6 6,6 Note 642 expériences vécues"
+        },
+        {
+            "name": "Dalikyda - La Jungle - Duplex - proche de la Gare",
+            "price": "€ 92",
+            "score": "Avec une note de 8,5 8,5 Très bien 11 expériences vécues"
+        },
+        {
+            "name": "Appart'hôtel Odalys City - Le Havre Centre",
+            "price": "€ 108",
+            "score": "Avec une note de 8,5 8,5 Très bien 1 335 expériences vécues"
+        },
+        {
+            "name": "Le LH CENTRE VILLE",
+            "price": "€ 90",
+            "score": "Avec une note de 8,2 8,2 Très bien 33 expériences vécues"
+        },
+        {
+            "name": "ibis Styles Le Havre Centre",
+            "price": "€ 89",
+            "score": "Avec une note de 7,7 7,7 Bien 143 expériences vécues"
+        }
+    ]
+}

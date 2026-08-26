@@ -2,7 +2,6 @@ import requests
 import pandas as pd
 from unidecode import unidecode
 import time
-from get_cities import get_city_info
 
 def weather_call_response_test(lat, lon):
     url = "https://api.openweathermap.org/data/2.5/weather"
@@ -16,14 +15,14 @@ def weather_call_response_test(lat, lon):
     response = requests.get(url, params=params) # Call api openweathermap test
     return print(f"status code du call api openweathermap : {response.status_code}") # check if the call is successful
 
-def get_weather_info(cities):
+def get_weather_info(cities_infos):
     """
     Récupère les informations météo pour une liste de villes en utilisant l'API OpenWeatherMap.
     """
     url = "https://api.openweathermap.org/data/2.5/weather"
 
     rows = []
-    for _, row in cities.iterrows():
+    for _, row in cities_infos.iterrows():
         params = {
             "lat": row["lat"],
             "lon": row["lon"],
@@ -60,6 +59,7 @@ def get_weather_info(cities):
         ],
         axis=1
     )
+    df_weather.to_csv("data/cities_and_weather_test.csv", index=False, encoding="utf-8-sig")
     return df_weather
 
 

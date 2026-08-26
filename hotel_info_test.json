@@ -1,0 +1,130 @@
+{
+    "city": "La Rochelle",
+    "hotels": [
+        {
+            "name": "ibis budget La Rochelle Centre les Minimes",
+            "price": "€ 94",
+            "score": "Avec une note de 7,7 7,7 Bien 3 576 expériences vécues"
+        },
+        {
+            "name": "Sweetly La Rochelle",
+            "price": "€ 127",
+            "score": "Avec une note de 8,6 8,6 Superbe 108 expériences vécues"
+        },
+        {
+            "name": "B&B HOTEL La Rochelle Centre 3 étoiles",
+            "price": "€ 149",
+            "score": "Avec une note de 8,2 8,2 Très bien 2 729 expériences vécues"
+        },
+        {
+            "name": "ibis Budget La Rochelle Centre gare",
+            "price": "€ 95",
+            "score": "Avec une note de 8,3 8,3 Très bien 3 322 expériences vécues"
+        },
+        {
+            "name": "B&B HOTEL La Rochelle Centre Les Minimes",
+            "price": "€ 103",
+            "score": "Avec une note de 8,1 8,1 Très bien 3 578 expériences vécues"
+        },
+        {
+            "name": "ibis Styles La Rochelle Centre Vieux Port",
+            "price": "€ 144",
+            "score": "Avec une note de 8,3 8,3 Très bien 1 266 expériences vécues"
+        },
+        {
+            "name": "Novotel La Rochelle Centre",
+            "price": "€ 179",
+            "score": "Avec une note de 8,4 8,4 Très bien 1 213 expériences vécues"
+        },
+        {
+            "name": "Appart'City Classic La Rochelle Centre",
+            "price": "€ 111",
+            "score": "Avec une note de 7,6 7,6 Bien 3 821 expériences vécues"
+        },
+        {
+            "name": "ibis Styles La Rochelle Centre les Minimes",
+            "price": "€ 128",
+            "score": "Avec une note de 8,4 8,4 Très bien 1 482 expériences vécues"
+        },
+        {
+            "name": "Maisons du Monde Hôtel & Suites - La Rochelle Vieux Port",
+            "price": "€ 179",
+            "score": "Avec une note de 8,6 8,6 Superbe 3 331 expériences vécues"
+        },
+        {
+            "name": "Hôtel Kyriad La Rochelle Centre Ville",
+            "price": "€ 121",
+            "score": "Avec une note de 8,5 8,5 Très bien 3 661 expériences vécues"
+        },
+        {
+            "name": "Résidence avec Piscine face au port 200m plage",
+            "price": "€ 114",
+            "score": "Avec une note de 8,1 8,1 Très bien 2 345 expériences vécues"
+        },
+        {
+            "name": "CENTRAL Hostel La Rochelle Centre",
+            "price": "€ 169",
+            "score": "Avec une note de 8,6 8,6 Superbe 1 116 expériences vécues"
+        },
+        {
+            "name": "ibis La Rochelle Centre Historique",
+            "price": "€ 115",
+            "score": "Avec une note de 8,1 8,1 Très bien 949 expériences vécues"
+        },
+        {
+            "name": "Hôtel Les Brises",
+            "price": "€ 185",
+            "score": "Avec une note de 8,8 8,8 Superbe 317 expériences vécues"
+        },
+        {
+            "name": "Le Saint-Nicolas",
+            "price": "€ 164",
+            "score": "Avec une note de 9,1 9,1 Fabuleux 3 364 expériences vécues"
+        },
+        {
+            "name": "Maison des Ambassadeurs",
+            "price": "€ 217",
+            "score": "Avec une note de 9,0 9,0 Fabuleux 2 058 expériences vécues"
+        },
+        {
+            "name": "IBIS La Rochelle Vieux Port Centre",
+            "price": "€ 149",
+            "score": "Avec une note de 8,5 8,5 Très bien 1 005 expériences vécues"
+        },
+        {
+            "name": "ATHOME RESIDENCE ET SPA",
+            "price": "€ 110",
+            "score": "Avec une note de 8,1 8,1 Très bien 2 584 expériences vécues"
+        },
+        {
+            "name": "Hôtel Les Gens de Mer La Rochelle",
+            "price": "€ 110",
+            "score": "Avec une note de 7,8 7,8 Bien 2 007 expériences vécues"
+        },
+        {
+            "name": "Résidence hôtelière Odalys l'Archipel",
+            "price": "€ 162",
+            "score": "Avec une note de 8,5 8,5 Très bien 2 120 expériences vécues"
+        },
+        {
+            "name": "Hôtel Inn Design La Rochelle",
+            "price": "€ 94",
+            "score": "Avec une note de 7,9 7,9 Bien 3 230 expériences vécues"
+        },
+        {
+            "name": "Lagrange Apart'Hotel l’Escale Marine",
+            "price": "€ 117",
+            "score": "Avec une note de 7,7 7,7 Bien 5 743 expériences vécues"
+        },
+        {
+            "name": "Hôtel La Monnaie Arty & Spa",
+            "price": "€ 200",
+            "score": "Avec une note de 8,9 8,9 Superbe 2 109 expériences vécues"
+        },
+        {
+            "name": "ibis Styles La Rochelle Centre Gare",
+            "price": "€ 146",
+            "score": "Avec une note de 8,2 8,2 Très bien 1 783 expériences vécues"
+        }
+    ]
+}

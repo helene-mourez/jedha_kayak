@@ -6,14 +6,14 @@ import traceback
 from cities_list import cities_normalized, exercice_cities
 
 
-def nominatim_call_response_test(country):
+def nominatim_call_response_test(city):
     """
     Test the response of the Nominatim API call.
     """
     url = "https://nominatim.openstreetmap.org/search"
     
     params = {
-        "country": country,
+        "city": city,
         "format": "geocodejson"
     }
     headers = {"User-Agent": "projet_etude_dataviz (lnmourez@gmail.com)"}
@@ -24,6 +24,7 @@ def nominatim_call_response_test(country):
 def get_city_info(cities):
     """
     Get city information as name, place_id, latitude and longitude from the Nominatim API for a list of cities
+    Doit s'utiliser dans une boucle pour chaque ville pour respecter l'argument des params "city" de l'API Nominatim.
     """
 
     url = "https://nominatim.openstreetmap.org/search"
@@ -31,7 +32,7 @@ def get_city_info(cities):
 
     rows = []
     for city in cities:
-        params = {"q": city, "format": "geocodejson", "countrycodes": "fr"}
+        params = {"q": f"{city}, France", "format": "geocodejson", "countrycodes": "fr"}
         response = requests.get(url, params=params, headers=headers)
         response_json = response.json()
 
@@ -62,6 +63,7 @@ def get_city_info(cities):
     # drop accents on name column
     cities_infos["name"] = cities_infos["name"].apply(unidecode)
 
+    cities_infos.to_csv("data/cities_test.csv", index=False)
     return cities_infos
 
 ###### script tests ####

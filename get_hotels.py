@@ -5,12 +5,15 @@ import random
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
+import json
+import cities_list
 
 ##### Script tests ####
-# city = "Saint-Malo"
+# city = "carla bayle"
+# checkin = "2026-08-28"
+# checkout = "2026-08-29"
 #######################
-checkin = "2026-08-28"
-checkout = "2026-08-29"
+
 
 def get_hotel_info(city, checkin, checkout):
     """
@@ -76,15 +79,27 @@ def get_hotel_info(city, checkin, checkout):
 
         browser.close()
 
-    #return pd.DataFrame(hotel_info)
+    with open("data/tests/hotel_info_test.json", "w", encoding="utf-8") as fichier:
+        json.dump(
+            hotel_info,
+            fichier,
+            ensure_ascii=False,
+            indent=4
+        )
+
     return hotel_info
 
 ##### script tests ####
-# get_hotel = get_hotel_info(city, checkin, checkout)
+# hotel_info = get_hotel_info(city, checkin, checkout)
 
-# print(get_hotel)
-# print (len(get_hotel))
-# print(type(get_hotel))
-
-# get_hotel.to_csv("data/hotels_scrap_test.csv", index=False, encoding="utf-8-sig")
+# print(hotel_info)
+# print (len(hotel_info))
+# print(type(hotel_info))
+# with open("data/tests/hotel_info_test.json", "w", encoding="utf-8") as fichier:
+#         json.dump(
+#             hotel_info,
+#             fichier,
+#             ensure_ascii=False,
+#             indent=4
+#         )
 #######################
