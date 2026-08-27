@@ -18,17 +18,17 @@ import random
 # call api 
 ## get_city 
 
-cities = [# "Aigues Mortes", "Aix en Provence", "Amiens", "Annecy", "Avignon",
-    # "Barjols", "Bayeux", "Bayonne", "Besancon", "Biarritz", 
-	# "Bormes les Mimosas", "Bédeilhac-et-Aynat", "Camon", "Carcassonne", 
-	"Carla-Bayle", # "Cassis", "Castellane", "Collioure", "Colmar", "Cotignac",
-    # "Dijon", "Eguisheim", "Foix", "Grenoble", "La Rochelle", "Le Havre",
-    "Le Mas-d’Azil",# "Lille", "Lyon", "Marseille", "Mirepoix", 
-	# "Mont Saint Michel", "Montauban", "Montségur", "Moustiers-Sainte-Marie",
-    # "Niaux", "Nimes", "Orschwiller", "Paris", "Rouen", "Saint-Lizier",
-    "Saint-Martin-d’Oydes",# "Sainte-Croix-du-Verdon", 
-	# "Saintes Maries de la mer", "Sillans-la-Cascade", "St Malo", "Strasbourg",
-    # "Tarascon-sur-Ariège", "Toulouse", "Uzes", 
+cities = ["Aigues Mortes", "Aix en Provence", "Amiens", "Annecy", "Avignon",
+    "Barjols", "Bayeux", "Bayonne", "Besancon", "Biarritz", 
+	"Bormes les Mimosas", "Bédeilhac-et-Aynat", "Camon", "Carcassonne", 
+	"Carla-Bayle", "Cassis", "Castellane", "Collioure", "Colmar", "Cotignac",
+    "Dijon", "Eguisheim", "Foix", "Grenoble", "La Rochelle", "Le Havre",
+    "Le Mas-d’Azil", "Lille", "Lyon", "Marseille", "Mirepoix", 
+	"Mont Saint Michel", "Montauban", "Montségur", "Moustiers-Sainte-Marie",
+    "Niaux", "Nimes", "Orschwiller", "Paris", "Rouen", "Saint-Lizier",
+    "Saint-Martin-d’Oydes", "Sainte-Croix-du-Verdon", 
+	"Saintes Maries de la mer", "Sillans-la-Cascade", "St Malo", "Strasbourg",
+    "Tarascon-sur-Ariège", "Toulouse", "Uzes", 
     "Valensole"
     ]
 cities_info = get_city(cities) # in dictionaries list, fetch per element
@@ -68,16 +68,14 @@ for i, city in enumerate(current_weather_df['city']):
             hotel["city"] = city
             hotel_info.append(hotel)
             print(f"Nombre d'hôtels trouvés pour {city} : {len(hotel_info[-1]['hotels'])}")
-        else :
-            no_hotel.append(city)
 
         if (i + 1) % 20 == 0:
             print("Pause après 20 villes...")
             time.sleep(random.uniform(30, 60))  # Pause plus longue après chaque 20 villes
 
     except Exception as e:
+        no_hotel.append(city)
         print(f"Aucun hôtel disponible : {city}")
-        print(f"Villes en échec : {no_hotel}")
         print(f"Erreur : {e}")
         continue  # Passe à la ville suivante en cas d'erreur   
    
@@ -86,6 +84,7 @@ hotel_df = t.hotel_normalize(hotel_info)
 ## merge DataFrames current weather per city and hotel on 'city' 
 
 df = t.merge2(current_weather_df, hotel_df)
+print(f"{len(no_hotel)} aucun hôtel disponible aujourd'hui : {no_hotel}")
 
 print(hotel_df)
 print(df)

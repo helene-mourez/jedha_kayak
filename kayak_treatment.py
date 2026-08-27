@@ -44,9 +44,7 @@ def merge1(cities_df, weather_df):
     current_weather_df = pd.merge(cities_df, weather_df, on='city')
 
     mapping = {"Le Carla-Bayle" : "Carla-Bayle",
-                    "Le Mas-d'Azil" : "Le Mas-d'Azil, D119, 09290", # Le Mas-d'Azil, Le Mas-d'Azil, Occitanie, France
-                    "Saint-Martin-d'Oydes" : "Saint-Martin-d'Oydes, Saint-Martin-d'Oydes, Occitanie", # Saint-Martin-d'Oydes, D626 A, 09100
-                    "Saintes-Maries-de-la-Mer" : "Les Saintes-Maries-de-la-Mer, Provence-Alpes-Côte d'Azur (Sud de la France), France"} 
+                "Saintes-Maries-de-la-Mer" : "Les Saintes-Maries-de-la-Mer, Provence-Alpes-Côte d'Azur (Sud de la France), France"} 
     current_weather_df["city"] = current_weather_df["city"].replace(mapping) # force some values on booking.com
     # print(f"***clean_cities*** : {current_weather_df['city'].tolist()}")
     return current_weather_df
