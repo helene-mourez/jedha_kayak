@@ -1,16 +1,21 @@
+# windows 11
 # python3.13.9
+# vscode
+# conda interpreter 26.1.1
 
-
-
-# get_cities
-
-requests==2.32.5
+# internal librairies
 # json 
 # time
-dotenv==1.1.0
 # os
+
+# third party libraries
+requests==2.34.2
+python-dotenv==1.2.2
 pandas==2.3.3
+beautifulsoup4==4.14.3
+playwright==1.62.0
+plotly==6.3.0
 
 
 
-# get weather
+

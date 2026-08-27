@@ -1,115 +1,97 @@
-# Libraries import
-
-import requests
-import json
-import time
-from dotenv import load_dotenv
-import os
+from playwright.sync_api import sync_playwright
+from urllib.parse import quote_plus
+import time # temporisation
+import random
+from bs4 import BeautifulSoup
 import pandas as pd
+import re
+import json
 
-# Configuration
+##### Script tests ####
+# city = "Saint-Malo"
+# checkin = "2026-08-28"
+# checkout = "2026-08-29"
+#######################
 
-# pd.set_option('display.max_columns', None) # display each column's dataframe
+def get_hotel(city, checkin, checkout):
+    """
+    Récupère les informations des hôtels pour une ville donnée en utilisant le site Booking.com via Playwright.
+    """
+    city_url = quote_plus(city)
+    url = f"https://www.booking.com/searchresults.fr.html?ss={city_url}&lang=fr&checkin={checkin}&checkout={checkout}"
 
-def get_city():
-    '''
-    CALL API NOMINATIM
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
 
-    Realised with Nominatim 5.3.2 manual : https://nominatim.org/release-docs/latest/
-    '''
+        page = browser.new_page(
+                viewport={"width": 1280, "height": 800},
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+                )
 
-    nominatim_url = "https://nominatim.openstreetmap.org/search"
-    # cities_info = f"{nominatim_url}/cities_location.json"
+        page.goto(url,
+            wait_until="domcontentloaded",
+            timeout=30000
+        )
 
-    # params = {
-    #    "country": "France",
-    #    "city": "Bayeux",
-    #    "format": "geocodejson"
-    # }
+        page.wait_for_load_state("networkidle")
+        time.sleep(random.uniform(3, 6)) 
 
-    headers = {"User-Agent": "projet_etude_dataviz (lnmourez@gmail.com)"}
-    # nominatim_response = requests.get(nominatim_url, params=params, headers=headers) # call api
-
-    # print(nominatim_response) # call api status code 
-
-    cities_info = []
-    cities = ["Aigues Mortes",
-    "Aix en Provence",
-    "Amiens",
-    "Annecy",
-    "Avignon",
-    "Barjols",
-    "Bayeux",
-    "Bayonne",
-    "Besancon",
-    "Biarritz",
-    "Bormes les Mimosas",
-    "Bédeilhac-et-Aynat",
-    "Camon",
-    "Carcassonne",
-    "Carla-Bayle",
-    "Cassis",
-    "Castellane",
-    "Collioure",
-    "Colmar",
-    "Cotignac",
-    "Dijon",
-    "Eguisheim",
-    "Foix",
-    "Grenoble",
-    "La Rochelle",
-    "Le Havre",
-    "Le Mas-d’Azil",
-    "Lille",
-    "Lyon",
-    "Marseille",
-    "Mirepoix",
-    "Mont Saint Michel",
-    "Montauban",
-    "Montségur",
-    "Moustiers-Sainte-Marie",
-    "Niaux",
-    "Nimes",
-    "Orschwiller",
-    "Paris",
-    "Rouen",
-    "Saint-Lizier",
-    "Saint-Martin-d’Oydes",
-    "Sainte-Croix-du-Verdon",
-    "Saintes Maries de la mer",
-    "Sillans-la-Cascade",
-    "St Malo",
-    "Strasbourg",
-    "Tarascon-sur-Ariège",
-    "Toulouse",
-    "Uzes",
-    "Valensole"
-    ]
-    response = []
-    for city in cities:
-        try:
-            nominatim_response = requests.get(
-                nominatim_url, 
-                params={"country": "France",
-                "city": city,
-                "format": "geocodejson"
-                },
-                headers=headers)
-
-            if nominatim_response.status_code==200 :
-                response.append(200) # compteur status code = 200 sur les appels
-            feature = nominatim_response.json()["features"][0]
-            cities_info.append({"city" : feature["properties"]["geocoding"]["name"],
-            "place_id" : feature["properties"]["geocoding"]["place_id"],
-            "lat" : feature["geometry"]["coordinates"][1],
-            "lon" : feature["geometry"]["coordinates"][0]
-            })
-            
-        except (IndexError, KeyError, requests.exceptions.RequestException):
-            print(f"Execution with errors for {city} : {nominatim_response.status_code}")
         
-        time.sleep(2) 
-    return cities_info, print(len(response)) # liste de dictionnaires
+        hotel_cards = page.locator("div[data-testid='property-card']")
 
-# script test 
-# print(get_city())
+        hotel_cards.first.wait_for(
+            state="visible",
+            timeout=30000
+        )
+        # # Trouver la suggestion qui commence par le nom de la ville
+        # suggestions = page.locator("a[data-testid='suggested-destination']")
+        # if suggestions.count() > 0:
+        #     for i in range(suggestions.count()):
+        #         text = suggestions.nth(i).inner_text()
+        #         if text.lower().startswith(city.lower()):
+        #             suggestions.nth(i).click()
+        #             page.wait_for_load_state("networkidle")
+        #             break    
+        
+        print(f"Nombre d'hôtels trouvés : {hotel_cards.count()}")
+
+
+        def get_text(card, selector):
+            element = card.locator(selector)
+
+            if element.count() == 0:
+                return None
+
+            text = BeautifulSoup(
+                element.first.inner_text(),
+                "html.parser"
+            ).get_text(" ", strip=True)
+
+            return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
+
+        city_text = page.locator("h1").inner_text()
+        city = city_text.split(":")[0].strip().replace("-", " ")
+
+        hotel_info = {"city" : city, "hotels": []}
+        for i in range(hotel_cards.count()):
+            card = hotel_cards.nth(i)
+
+            name = get_text(card, "div[data-testid='title']")
+            price = get_text(card, "span[data-testid='price-and-discounted-price']")
+            score = get_text(card, "div[data-testid='review-score']")
+
+            hotel_info["hotels"].append({"name": name, "price": price, "score": score})
+            # print(f"get_hotel : {hotel_info}")
+            # print(f"ville : {city}, nom de l'hôtel : {name}, prix : {price}, score : {score}")        
+
+        browser.close()
+
+        return hotel_info
+
+##### script tests ####
+# get_hotel = get_hotel(city, checkin, checkout)
+
+# print(get_hotel)
+# print (len(get_hotel))
+# print(type(get_hotel))
+#######################
