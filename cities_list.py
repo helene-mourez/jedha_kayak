@@ -179,3 +179,9 @@ exercice_cities = [
 "Biarritz",
 "Bayonne",
 "La Rochelle"]
+
+test_cities = [
+"Le-Mas-d'Azil",
+"Saint-Martin-d'Oydes",
+"Biarritz",
+]

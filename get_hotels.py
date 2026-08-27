@@ -10,7 +10,7 @@ import cities_list
 from utilities_tools_store import get_text
 
 ##### Script tests ####
-# city = "carla bayle"
+# city = "Le-Mas-d'Azil"
 # checkin = "2026-08-28"
 # checkout = "2026-08-29"
 #######################
@@ -79,8 +79,8 @@ def get_hotel_info(city, checkin, checkout):
 ##### script tests ####
 # hotel_info = get_hotel_info(city, checkin, checkout)
 
-# print(hotel_info)
-# print (len(hotel_info))
+# # print(hotel_info)
+# print(len(hotel_info))
 # print(type(hotel_info))
 # with open("data/tests/hotel_info_test.json", "w", encoding="utf-8") as fichier:
 #         json.dump(
