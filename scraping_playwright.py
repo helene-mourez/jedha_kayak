@@ -1,4 +1,5 @@
-#pip install playwright` 
+###scraping with plawright and no-detecti setting, temporisation###
+# pip install playwright` 
 # playwright install`
 from playwright.sync_api import sync_playwright
 import time # temporisation
@@ -15,7 +16,7 @@ with sync_playwright() as p:
     )
     page.goto(url)
     page.wait_for_load_state("networkidle")
-    time.sleep(random.uniform(3, 6)) # tempo aléatoire
+    time.sleep(random.uniform(3, 6)) # temporisation aléatoire
     html = page.content() 
     soup = BeautifulSoup(html, "html.parser")
 

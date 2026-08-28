@@ -9,8 +9,8 @@ import requests
 from dotenv import load_dotenv
 import pandas as pd
 
-from kayak_config import weather_url
-from kayak_get_city import get_city
+from config import weather_url
+from get_city import get_city
 
 # V2.5 https://api.openweathermap.org/data/2.5/weather
 # V4.0 https://api.openweathermap.org/data/4.0/onecall/current

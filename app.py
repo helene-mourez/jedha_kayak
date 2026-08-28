@@ -3,17 +3,16 @@
 
 import pandas as pd
 
-from config import cities, weather_url
-from get_city import get_city
-from get_weather import get_weather
-import kayak_treatment as t
-from get_hotel import get_hotel
 from playwright._impl._errors import TimeoutError
-
 from datetime import date, timedelta
 import re
 import time 
 import random
+from config import cities, weather_url
+from get_city import get_city
+from get_weather import get_weather
+import treatment as t
+from get_hotel import get_hotel
 
 # orchestration 
 
@@ -52,6 +51,9 @@ no_hotel = []
 checkin = date.today().strftime("%Y-%m-%d") 
 checkout = (date.today() + timedelta(days=1)).strftime("%Y-%m-%d") # tomorrow dates au format AAAA-MM-DD
 
+# checkin = date.today().strftime("%Y-%m-%d") 
+# checkout = (date.today() + timedelta(days=1)).strftime("%Y-%m-%d") # tomorrow dates au format AAAA-MM-DD
+
 for i, city in enumerate(current_weather_df['city']):
     try :
         time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
@@ -61,7 +63,7 @@ for i, city in enumerate(current_weather_df['city']):
         if hotel is not None:
             hotel["city"] = city
             hotel_info.append(hotel)
-            print(f"{len(hotel_info[-1]['hotels'])} hotels found for {city} : ")
+            print(f"{len(hotel_info[-1]['hotels'])} hotel(s) found for {city} : ")
 
         if (i + 1) % 20 == 0:
             print("Pause after 20 cities...")
@@ -82,11 +84,11 @@ hotel_df = t.hotel_normalize(hotel_info)
 ## merge DataFrames current weather per city and hotel on 'city' 
 
 df = t.merge2(current_weather_df, hotel_df)
-print(f"{len(no_hotel)} No hotel available today : {no_hotel}")
+print(f"No hotel available today : {len(no_hotel)} in {no_hotel}")
 
 print(hotel_df)
 print(df)
 
 # write csv file 
 
-df.to_csv("merged_data.csv", index=False) # avoid a second index creation
+df.to_csv("data\merged_data.csv", index=False) # avoid a second index creation

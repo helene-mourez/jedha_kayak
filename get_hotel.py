@@ -39,10 +39,8 @@ def get_hotel(city, checkin, checkout):
 
         page.wait_for_load_state("networkidle")
         time.sleep(random.uniform(3, 6)) 
-
         
         hotel_cards = page.locator("div[data-testid='property-card']")
-
         hotel_cards.first.wait_for(
             state="visible",
             timeout=30000
@@ -83,6 +81,19 @@ def get_hotel(city, checkin, checkout):
             name = get_text(card, "div[data-testid='title']")
             price = get_text(card, "span[data-testid='price-and-discounted-price']")
             score = get_text(card, "div[data-testid='review-score']")
+
+            # button = card.locator("button:has-text('Voir les disponibilités')")
+            # button.click()
+            # page.wait_for_load_state("networkidle")
+            
+            # # Scrapez les éléments de la 2e page ici
+            # points forts
+            strengths_list = page.locator("xpath=/html/body/div[4]/div/div[4]/main/div[1]/div[3]/div/div[1]/div[2]/div[2]/div/div/ul")
+            strengths = strengths_list.locator("li")
+            strengths_text = [strengths.nth(j).inner_text() for j in range(strengths.count())]
+            
+            # page.go_back()
+            # hotel_cards = page.locator("div[data-testid='property-card']")
 
             hotel_info["hotels"].append({"name": name, "price": price, "score": score})
             # print(f"get_hotel : {hotel_info}")

@@ -1,9 +1,10 @@
+###treatment###
 # import libraries
 import pandas as pd
 import json
 
-from kayak_get_city import get_city
-from kayak_get_weather import get_weather
+from get_city import get_city
+from get_weather import get_weather
 
 # call api get_city get weather
 
@@ -15,7 +16,7 @@ from kayak_get_weather import get_weather
 
 def cities_normalize(cities_info):
     cities_df = pd.DataFrame(cities_info)
-    cities_df.to_csv("cities.csv", index=False)
+    cities_df.to_csv("data\cities.csv", index=False)
     return cities_df
 
 ## weather
@@ -30,7 +31,7 @@ def weather_normalize(weather_info):
         weather_df.drop(columns="weather"),
         weather2
         ],axis=1)
-    weather_df.to_csv("weather.csv", index=False)
+    weather_df.to_csv("data\weather.csv", index=False)
     return weather_df 
 
 # hotel
@@ -47,7 +48,13 @@ def hotel_normalize(hotel_info):
     hotel_df = hotel_df.rename(columns={
         'name': 'hotel.name', 'price': 'hotel.price', 'score': 'hotel.score'
     })
-    hotel_df.to_csv("hotel.csv", index=False)
+    # extract data from hotel.name et hotel.score
+    hotel_df['hotel.label'] = hotel_df['hotel.name'].str.split(' - ').str[0] # register hotel label
+    hotel_df['hotel.rate'] = hotel_df['hotel.score'].str.extract(r'(\d+,\d+)') # extract hotel score  
+    hotel_df['hotel.rate_label'] = hotel_df['hotel.score'].str.extract(r'\d+,\d+\s+(\w+)\s+\d+(?:\s+\d+)*\s+expériences') # extract rate label
+    hotel_df['hotel.experience'] = hotel_df['hotel.score'].str.extract(r'(\d+(?:\s+\d+)*)\s+expériences') # extract rental number of the client
+    hotel_df = hotel_df.drop(columns=['hotel.name', 'hotel.score'])
+    hotel_df.to_csv("data\hotel.csv", index=False)
     return hotel_df
 
 # merge DataFrames on city
@@ -57,7 +64,7 @@ def merge1(cities_df, weather_df):
     current_weather_df = pd.merge(cities_df, weather_df, on='city')
 
     # force some values on booking.com
-    mapping = {"Le Carla-Bayle" : "Carla-Bayle",
+    mapping = {"Le Carla-Bayle" : "Carla-Bayle",              
                 "Saintes-Maries-de-la-Mer" : "Les Saintes-Maries-de-la-Mer, Provence-Alpes-Côte d'Azur (Sud de la France), France"} 
     current_weather_df["city"] = current_weather_df["city"].replace(mapping) 
     # print(f"***clean_cities*** : {current_weather_df['city'].tolist()}")

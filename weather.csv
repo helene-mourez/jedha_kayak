@@ -1,3 +1,0 @@
-base,visibility,dt,timezone,id,name,cod,city,coord.lon,coord.lat,main.temp,main.feels_like,main.temp_min,main.temp_max,main.pressure,main.humidity,main.sea_level,main.grnd_level,wind.speed,wind.deg,clouds.all,sys.type,sys.id,sys.country,sys.sunrise,sys.sunset,wind.gust,data.0.id,data.0.main,data.0.description,data.0.icon
-stations,10000,1787932607,7200,3038493,Aigues-Mortes,200,Aigues-Mortes,4.1915,43.5662,30.86,29.09,29.99,30.98,1014,23,1014,1014,6.69,220,100,1.0,6518.0,FR,1787893346,1787941625,,804,Clouds,overcast clouds,04d
-stations,10000,1787932345,7200,2971033,Valensole,200,Valensole,5.984,43.8379,24.84,24.92,24.84,24.84,1015,59,1015,958,4.41,235,100,,,FR,1787892892,1787941218,5.54,804,Clouds,overcast clouds,04d
