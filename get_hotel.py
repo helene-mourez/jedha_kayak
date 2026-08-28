@@ -1,3 +1,7 @@
+###get_hotel###
+
+# import libraries
+
 from playwright.sync_api import sync_playwright
 from urllib.parse import quote_plus
 import time # temporisation

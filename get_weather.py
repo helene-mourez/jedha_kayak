@@ -1,3 +1,4 @@
+###get_weather###
 # import libraries
 
 import json
@@ -7,6 +8,8 @@ import os
 import requests
 from dotenv import load_dotenv
 import pandas as pd
+
+from kayak_config import weather_url
 from kayak_get_city import get_city
 
 # V2.5 https://api.openweathermap.org/data/2.5/weather
@@ -14,10 +17,10 @@ from kayak_get_city import get_city
 
 def get_weather(cities_info):
     load_dotenv()
-    weather_url = "https://api.openweathermap.org/data/2.5/weather"
 
     weather_info = []
     response = []
+    weather_url
     
     for city in cities_info:
         try:

@@ -1,3 +1,5 @@
+###get_city###
+
 # import libraries
 
 import json
@@ -68,7 +70,7 @@ def get_city(cities):
                 response.append(200) # compteur status code = 200 sur les appels
             feature = nominatim_response.json()["features"][0]
             cities_info.append({"city" : feature["properties"]["geocoding"]["name"],
-            "place_id" : feature["properties"]["geocoding"]["place_id"],
+            # "place_id" : feature["properties"]["geocoding"]["place_id"],
             "lat" : feature["geometry"]["coordinates"][1],
             "lon" : feature["geometry"]["coordinates"][0]
             })
