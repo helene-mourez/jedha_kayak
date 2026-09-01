@@ -63,7 +63,7 @@ for i, city in enumerate(current_weather_df['city']):
         if hotel is not None:
             hotel["city"] = city
             hotel_info.append(hotel)
-            print(f"{len(hotel_info[-1]['hotels'])} hotel(s) found for {city} : ")
+            print(f"{len(hotel_info[-1]['hotels'])} hotel(s) found for {city}")
 
         if (i + 1) % 20 == 0:
             print("Pause after 20 cities...")
@@ -75,8 +75,6 @@ for i, city in enumerate(current_weather_df['city']):
         print(f"Technical error : {e}")
         continue  # Passe à la ville suivante en cas d'erreur   
    
-hotel_df = t.hotel_normalize(hotel_info)
-
 ## normalize hotel
 
 hotel_df = t.hotel_normalize(hotel_info)

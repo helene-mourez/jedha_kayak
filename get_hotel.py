@@ -55,7 +55,7 @@ def get_hotel(city, checkin, checkout):
         #             page.wait_for_load_state("networkidle")
         #             break    
         
-        print(f"Nombre d'hôtels trouvés : {hotel_cards.count()}")
+        # print(f"Nombre d'hôtels trouvés aujoud'hui : {hotel_cards.count()}")
 
 
         def get_text(card, selector):
@@ -88,14 +88,18 @@ def get_hotel(city, checkin, checkout):
             
             # # Scrapez les éléments de la 2e page ici
             # points forts
-            strengths_list = page.locator("xpath=/html/body/div[4]/div/div[4]/main/div[1]/div[3]/div/div[1]/div[2]/div[2]/div/div/ul")
-            strengths = strengths_list.locator("li")
-            strengths_text = [strengths.nth(j).inner_text() for j in range(strengths.count())]
+            # strengths_list = page.locator("xpath=/html/body/div[4]/div/div[4]/main/div[1]/div[3]/div/div[1]/div[2]/div[2]/div/div/ul")
+            # strengths = strengths_list.locator("li")
+            # strengths_text = [strengths.nth(j).inner_text() for j in range(strengths.count())]
             
             # page.go_back()
             # hotel_cards = page.locator("div[data-testid='property-card']")
 
-            hotel_info["hotels"].append({"name": name, "price": price, "score": score})
+            hotel_city = get_text(card, "span[data-testid='address-link']")
+            
+                ###
+            if hotel_city and hotel_city.lower() == city.lower():
+                hotel_info["hotels"].append({"name": name, "hotel.city": hotel_city,"price": price, "score": score})
             # print(f"get_hotel : {hotel_info}")
             # print(f"ville : {city}, nom de l'hôtel : {name}, prix : {price}, score : {score}")        
 

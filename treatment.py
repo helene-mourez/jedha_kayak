@@ -36,6 +36,7 @@ def weather_normalize(weather_info):
 
 # hotel
 
+# à refaire en tenant compte de hotel_city
 def hotel_normalize(hotel_info):
     hotel = [h for city in hotel_info for h in city] 
     hotel_df = pd.json_normalize(hotel_info)
@@ -50,8 +51,8 @@ def hotel_normalize(hotel_info):
     })
     # extract data from hotel.name et hotel.score
     hotel_df['hotel.label'] = hotel_df['hotel.name'].str.split(' - ').str[0] # register hotel label
-    hotel_df['hotel.rate'] = hotel_df['hotel.score'].str.extract(r'(\d+,\d+)') # extract hotel score  
-    hotel_df['hotel.rate_label'] = hotel_df['hotel.score'].str.extract(r'\d+,\d+\s+(\w+)\s+\d+(?:\s+\d+)*\s+expériences') # extract rate label
+    hotel_df['hotel.rate'] = hotel_df['hotel.score'].str.extract(r'(?:de\s+)?(\d+(?:,\d+)?)') # extract hotel score  
+    hotel_df['hotel.rate_label'] = hotel_df['hotel.score'].str.extract(r'(?:\d+(?:,\d+)?)\s+(?:\d+(?:,\d+)?)\s+([^\d]+?)\s+\d+')[0].str.strip() # extract rate label
     hotel_df['hotel.experience'] = hotel_df['hotel.score'].str.extract(r'(\d+(?:\s+\d+)*)\s+expériences') # extract rental number of the client
     hotel_df = hotel_df.drop(columns=['hotel.name', 'hotel.score'])
     hotel_df.to_csv("data\hotel.csv", index=False)
