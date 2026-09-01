@@ -1,130 +1,155 @@
 {
-    "city": "La Rochelle",
+    "city": "Nice",
     "hotels": [
         {
-            "name": "ibis budget La Rochelle Centre les Minimes",
-            "price": "€ 161",
-            "score": "Avec une note de 7,7 7,7 Bien 3 578 expériences vécues"
+            "hotel_city": "Arenas, Nice",
+            "name": "ibis budget Nice Aeroport",
+            "price": "€ 151",
+            "score": "Avec une note de 7,7 7,7 Bien 9 220 expériences vécues"
         },
         {
-            "name": "B&B HOTEL La Rochelle Centre 3 étoiles",
-            "price": "€ 293",
-            "score": "Avec une note de 8,2 8,2 Très bien 2 731 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "LE CALA - BIG FLAT - Hypercentre - 4 chambres - Air Conditionning",
+            "price": "€ 677",
+            "score": "Avec une note de 9,4 9,4 Fabuleux 20 expériences vécues"
         },
         {
-            "name": "ibis Budget La Rochelle Centre gare",
-            "price": "€ 203",
-            "score": "Avec une note de 8,3 8,3 Très bien 3 323 expériences vécues"
+            "hotel_city": "Arenas, Nice",
+            "name": "ibis Nice Aéroport Promenade des Anglais",
+            "price": "€ 174",
+            "score": "Avec une note de 8,0 8,0 Très bien 2 096 expériences vécues"
         },
         {
-            "name": "Auberge de Jeunesse",
-            "price": "€ 228",
-            "score": "Avec une note de 8,0 8,0 Très bien 852 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Crisol Mozart",
+            "price": "€ 336",
+            "score": "Avec une note de 8,2 8,2 Très bien 1 279 expériences vécues"
         },
         {
-            "name": "Novotel La Rochelle Centre",
-            "price": "€ 379",
-            "score": "Avec une note de 8,4 8,4 Très bien 1 214 expériences vécues"
+            "hotel_city": "Arenas, Nice",
+            "name": "Greet Hotel Nice Aéroport Promenade des Anglais",
+            "price": "€ 159",
+            "score": "Avec une note de 7,5 7,5 Bien 3 918 expériences vécues"
         },
         {
-            "name": "B&B HOTEL La Rochelle Centre Les Minimes",
-            "price": "€ 214",
-            "score": "Avec une note de 8,1 8,1 Très bien 3 560 expériences vécues"
+            "hotel_city": "Nice",
+            "name": "PARME ETAPE",
+            "price": "€ 102",
+            "score": "Avec une note de 6,5 6,5 Note 3 384 expériences vécues"
         },
         {
-            "name": "Mercure La Rochelle Vieux Port",
-            "price": "€ 378",
-            "score": "Avec une note de 8,9 8,9 Superbe 1 835 expériences vécues"
+            "hotel_city": "Promenade des Anglais, Nice",
+            "name": "Hotel Palais de la Mediterranee, in the Unbound Collection by Hyatt",
+            "price": "€ 1 288",
+            "score": "Avec une note de 8,6 8,6 Superbe 904 expériences vécues"
         },
         {
-            "name": "ibis Styles La Rochelle Centre Vieux Port",
-            "price": "€ 268",
-            "score": "Avec une note de 8,3 8,3 Très bien 1 264 expériences vécues"
+            "hotel_city": "Promenade des Anglais, Nice",
+            "name": "Hôtel Le Royal Promenade des Anglais",
+            "price": "€ 481",
+            "score": "Avec une note de 8,2 8,2 Très bien 3 700 expériences vécues"
         },
         {
-            "name": "Appart'City Classic La Rochelle Centre",
-            "price": "€ 188",
-            "score": "Avec une note de 7,6 7,6 Bien 3 819 expériences vécues"
+            "hotel_city": "Arenas, Nice",
+            "name": "Nemea Appart Hotel Sunset Nice Arenas",
+            "price": "€ 146",
+            "score": "Avec une note de 6,8 6,8 Note 119 expériences vécues"
         },
         {
-            "name": "Hôtel Kyriad La Rochelle Centre Ville",
-            "price": "€ 268",
-            "score": "Avec une note de 8,5 8,5 Très bien 3 664 expériences vécues"
+            "hotel_city": "Liberation, Nice",
+            "name": "Alpazur",
+            "price": "€ 77",
+            "score": "Avec une note de 7,4 7,4 Bien 642 expériences vécues"
         },
         {
-            "name": "CENTRAL Hostel La Rochelle Centre",
-            "price": "€ 277",
-            "score": "Avec une note de 8,6 8,6 Superbe 1 117 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hostel Ozz Nice",
+            "price": "€ 200",
+            "score": "Avec une note de 8,1 8,1 Très bien 5 498 expériences vécues"
         },
         {
-            "name": "Résidence avec Piscine face au port 200m plage",
-            "price": "€ 291",
-            "score": "Avec une note de 8,0 8,0 Très bien 2 342 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Antares hostel",
+            "price": "€ 124",
+            "score": "Avec une note de 8,1 8,1 Très bien 1 632 expériences vécues"
         },
         {
-            "name": "Résidence Pierre & Vacances Centre",
-            "price": "€ 226",
-            "score": "Avec une note de 7,8 7,8 Bien 1 157 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "ESPERANCE HOTEL",
+            "price": "€ 168",
+            "score": "Avec une note de 7,3 7,3 Bien 1 593 expériences vécues"
         },
         {
-            "name": "ibis La Rochelle Centre Historique",
-            "price": "€ 202",
-            "score": "Avec une note de 8,1 8,1 Très bien 949 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hotel Gounod Fully Renovated",
+            "price": "€ 685",
+            "score": "Avec une note de 9,1 9,1 Fabuleux 1 075 expériences vécues"
         },
         {
-            "name": "Le Saint-Nicolas",
-            "price": "€ 346",
-            "score": "Avec une note de 9,1 9,1 Fabuleux 3 358 expériences vécues"
+            "hotel_city": "Nice",
+            "name": "Hotel Ibis Budget Nice Palais Nikaia",
+            "price": "€ 118",
+            "score": "Avec une note de 7,1 7,1 Bien 2 376 expériences vécues"
         },
         {
-            "name": "Hôtel Les Brises",
-            "price": "€ 365",
-            "score": "Avec une note de 8,8 8,8 Superbe 321 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hôtel Lyonnais",
+            "price": "€ 85",
+            "score": "Avec une note de 4,9 4,9 Note 1 771 expériences vécues"
         },
         {
-            "name": "Maison des Ambassadeurs",
-            "price": "€ 411",
-            "score": "Avec une note de 9,0 9,0 Fabuleux 2 059 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Maison Albar - Le Victoria",
+            "price": "€ 1 116",
+            "score": "Avec une note de 9,1 9,1 Fabuleux 713 expériences vécues"
         },
         {
-            "name": "Lagrange Apart'Hotel l’Escale Marine",
-            "price": "€ 223",
-            "score": "Avec une note de 7,7 7,7 Bien 5 748 expériences vécues"
+            "hotel_city": "Arenas, Nice",
+            "name": "Novotel Suites Nice Airport",
+            "price": "€ 296",
+            "score": "Avec une note de 8,4 8,4 Très bien 2 482 expériences vécues"
         },
         {
-            "name": "Appartement à 100m Plage des Minimes avec internet",
-            "price": "€ 205",
-            "score": "Avec une note de 8,3 8,3 Très bien 32 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hotel 64 Nice",
+            "price": "€ 799",
+            "score": "Avec une note de 8,9 8,9 Superbe 2 494 expériences vécues"
         },
         {
-            "name": "IBIS La Rochelle Vieux Port Centre",
-            "price": "€ 239",
-            "score": "Avec une note de 8,5 8,5 Très bien 1 005 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hotel Le Grimaldi by Happyculture",
+            "price": "€ 618",
+            "score": "Avec une note de 8,6 8,6 Superbe 1 997 expériences vécues"
         },
         {
-            "name": "ATHOME RESIDENCE ET SPA",
-            "price": "€ 235",
-            "score": "Avec une note de 8,1 8,1 Très bien 2 585 expériences vécues"
+            "hotel_city": "Promenade des Anglais, Nice",
+            "name": "Hôtel West End Promenade",
+            "price": "€ 735",
+            "score": "Avec une note de 8,3 8,3 Très bien 2 364 expériences vécues"
         },
         {
-            "name": "Maisons du Monde Hôtel & Suites - La Rochelle Vieux Port",
-            "price": "€ 274",
-            "score": "Avec une note de 8,6 8,6 Superbe 3 330 expériences vécues"
+            "hotel_city": "Vieux-Nice, Nice",
+            "name": "Albert 1er",
+            "price": "€ 344",
+            "score": "Avec une note de 8,4 8,4 Très bien 2 959 expériences vécues"
         },
         {
-            "name": "Hôtel Le Yachtman, The Originals Collection",
-            "price": "€ 347",
-            "score": "Avec une note de 8,7 8,7 Superbe 885 expériences vécues"
+            "hotel_city": "Nice",
+            "name": "Moxy Nice",
+            "price": "€ 167",
+            "score": "Avec une note de 8,4 8,4 Très bien 335 expériences vécues"
         },
         {
-            "name": "Hôtel Inn Design La Rochelle",
-            "price": "€ 140",
-            "score": "Avec une note de 7,9 7,9 Bien 3 234 expériences vécues"
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Splendid Hotel & Spa Nice",
+            "price": "€ 349",
+            "score": "Avec une note de 8,0 8,0 Très bien 2 720 expériences vécues"
         },
         {
-            "name": "Hôtel Les Gens de Mer La Rochelle",
-            "price": "€ 202",
-            "score": "Avec une note de 7,8 7,8 Bien 2 014 expériences vécues"
+            "hotel_city": "Promenade des Anglais, Nice",
+            "name": "Westminster Hotel & Spa Nice",
+            "price": "€ 737",
+            "score": "Avec une note de 8,4 8,4 Très bien 2 636 expériences vécues"
         }
     ]
 }

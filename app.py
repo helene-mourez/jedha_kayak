@@ -3,6 +3,7 @@
 from get_weather import get_weather_info, weather_call_response_test
 from get_hotels import get_hotel_info
 from get_cities import get_city_info, nominatim_call_response_test
+
 from cities_list import cities_normalized, exercice_cities, booking_city_aliases, exercice_cities_booking_aliases, test_cities
 from utilities_tools_store import standardize_city_text, get_text 
 
@@ -83,6 +84,7 @@ df_cities = cities_infos  # DataFrame final à partir de de la fonction get_city
 df_cities = df_cities.rename(columns={"name": "city"})
 df_weather = pd.DataFrame(weather_infos)
 df_hotels = pd.DataFrame(hotels_infos) # Crée un DataFrame final à partir de la liste des DataFrames d'hôtels
+df_hotels.to_csv("data/hotels_infos.csv", index=False, encoding="utf-8-sig") # Sauvegarde du DataFrame des hôtels en CSV
 
 # Standardisation des noms de villes dans les DataFrames pour éviter les problèmes de fusion
 df_cities["city"] = df_cities["city"].apply(standardize_city_text)
@@ -122,4 +124,4 @@ print("---------------------------------------------------------------------")
 print("---------------------------------------------------------------------")
 # ----------------- Bloc de sauvegarde du DataFrame final en CSV -----------------  #
 #final_df.to_csv("data/final_data_exercise_list.csv", index=False, encoding="utf-8-sig")
-final_df.to_csv("data/tests/final_data_test.csv", index=False, encoding="utf-8-sig")
+final_df.to_csv("data/tests/final_data.csv", index=False, encoding="utf-8-sig")

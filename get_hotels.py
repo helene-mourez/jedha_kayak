@@ -8,11 +8,12 @@ import re
 import json
 import cities_list
 from utilities_tools_store import get_text
+import cities_list
 
 ##### Script tests ####
-# city = "Le-Mas-d'Azil"
-# checkin = "2026-08-28"
-# checkout = "2026-08-29"
+# city = "Nice"
+# checkin = "2026-09-10"
+# checkout = "2026-09-11"
 #######################
 
 
@@ -60,19 +61,21 @@ def get_hotel_info(city, checkin, checkout):
             name = get_text(card, "div[data-testid='title']")
             price = get_text(card, "span[data-testid='price-and-discounted-price']")
             score = get_text(card, "div[data-testid='review-score']")
+            hotel_city = get_text(card, "span[data-testid='address-link']")
+            #print(f"city: {city}, hotel city: {hotel_city}")
 
-            hotel_info["hotels"].append({"name": name, "price": price, "score": score})
+            hotel_info["hotels"].append({"hotel_city": hotel_city, "name": name, "price": price, "score": score})
             #print(f"Nom de l'hôtel : Ville : {name_city}, {name}, Prix : {price}, Score : {score}")
 
         browser.close()
 
-    with open("data/tests/hotel_info_test.json", "w", encoding="utf-8") as fichier:
-        json.dump(
-            hotel_info,
-            fichier,
-            ensure_ascii=False,
-            indent=4
-        )
+    # with open("data/tests/hotel_info_test.json", "w", encoding="utf-8") as fichier:
+    #     json.dump(
+    #         hotel_info,
+    #         fichier,
+    #         ensure_ascii=False,
+    #         indent=4
+    #     )
 
     return hotel_info
 
