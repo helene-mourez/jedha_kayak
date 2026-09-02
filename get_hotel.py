@@ -48,7 +48,7 @@ def get_hotel(city, checkin, checkout):
         if hotel_cards.count()==0: # indiquer si aucun hôtel disponible
             browser.close()
             return {"city": city, "hotels": []}
-###            
+            
         hotel_cards.first.wait_for(
             state="visible",
             timeout=30000

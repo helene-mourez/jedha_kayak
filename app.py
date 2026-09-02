@@ -63,10 +63,6 @@ for i, city in enumerate(current_weather_df['city']):
         if hotel['hotels']:
             hotel['city'] = city
             hotel_info.append(hotel)
-        # if hotel is not None:
-        #     hotel["city"] = city
-        #     hotel_info.append(hotel)
-        #     print(f"{len(hotel_info[-1]['hotels'])} hotel(s) found for {city}")
         else :
             no_hotel.append(city)
         print(f"{len(hotel['hotels'])} hotel(s) found for {city}")

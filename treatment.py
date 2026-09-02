@@ -38,16 +38,13 @@ def weather_normalize(weather_info):
 
 # à refaire en tenant compte de hotel_city
 def hotel_normalize(hotel_info):
-    # hotel = [h for city in hotel_info for h in city] 
-    hotel_df = pd.json_normalize(hotel_info)
-    print(hotel_df)
-    type(hotel_df)
-    hotel_df.to_csv("hotel.csv", index=False)
-    # normalize dataframe and add city for each hotel
-    hotel = [{**h, 'city': item['city']} 
-             for item in hotel_info 
-             for h in item['hotels']] 
-    hotel_df = pd.json_normalize(hotel)
+
+    hotel_df = pd.json_normalize(
+    hotel_info, 
+    record_path=['hotels'], 
+    meta=['city']
+    )
+
     # add prefix column hotel.
     hotel_df = hotel_df.rename(columns={
         'name': 'hotel.name', 'price': 'hotel.price', 'score': 'hotel.score'
@@ -78,4 +75,5 @@ def merge1(cities_df, weather_df):
 
 def merge2(current_weather_df, hotel_df):
     df = pd.merge(current_weather_df, hotel_df, on='city')
+    hotel_df = hotel_df.drop(columns=['city'])
     return df
