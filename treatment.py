@@ -40,8 +40,9 @@ def weather_normalize(weather_info):
 def hotel_normalize(hotel_info):
     # hotel = [h for city in hotel_info for h in city] 
     hotel_df = pd.json_normalize(hotel_info)
+    print(hotel_df)
     type(hotel_df)
-    hotel_df.to_csv("data\hotel.csv", index=False)
+    hotel_df.to_csv("hotel.csv", index=False)
     # normalize dataframe and add city for each hotel
     hotel = [{**h, 'city': item['city']} 
              for item in hotel_info 

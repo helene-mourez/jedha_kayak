@@ -22,8 +22,8 @@ def get_hotel(city, checkin, checkout):
     Récupère les informations des hôtels pour une ville donnée en utilisant le site Booking.com via Playwright.
     """
     city_url = quote_plus(city)
-    url = f"https://www.booking.com/searchresults.fr.html?ss={city_url}&lang=fr&checkin={checkin}&checkout={checkout}"
-
+    # url = f"https://www.booking.com/searchresults.fr.html?ss={city_url}&lang=fr&checkin={checkin}&checkout={checkout}"
+    url= f"https://www.booking.com/searchresults.fr.html?ss={city_url}&lang=fr&checkin={checkin}&checkout={checkout}&nflt=ht_id%3D204"
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
 
@@ -39,7 +39,10 @@ def get_hotel(city, checkin, checkout):
 
         page.wait_for_load_state("networkidle")
         time.sleep(random.uniform(3, 6)) 
-        
+
+###
+        city_text = page.locator("h1").inner_text()
+###        
         hotel_cards = page.locator("div[data-testid='property-card']")
         hotel_cards.first.wait_for(
             state="visible",
