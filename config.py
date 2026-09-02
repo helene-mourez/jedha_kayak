@@ -4,11 +4,6 @@
 
 from datetime import date, timedelta
 
-# V2.5 "https://api.openweathermap.org/data/2.5/weather"
-# V4.0 "https://api.openweathermap.org/data/4.0/onecall/current"
-
-weather_url = "https://api.openweathermap.org/data/2.5/weather"
-
 cities = [#"Aigues Mortes", "Aix en Provence", "Amiens", "Annecy", "Avignon",
     # "Barjols", 
     "Bayeux" 
@@ -24,5 +19,8 @@ cities = [#"Aigues Mortes", "Aix en Provence", "Amiens", "Annecy", "Avignon",
     # "Toulouse", "Uzes", "Valensole"
     ]
 
+# V2.5 "https://api.openweathermap.org/data/2.5/weather"
+# V4.0 "https://api.openweathermap.org/data/4.0/onecall/current"
 
+weather_url = "https://api.openweathermap.org/data/2.5/weather"
 

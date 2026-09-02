@@ -42,8 +42,14 @@ def get_weather(cities_info):
             print(f"Failed on {city} : {weather_response.status_code}")
         time.sleep(2)
 
-    return weather_info, print(len(response))
+    # logs
+    print("---------------------------------------------------------------------")
+    print("Fetch weather datas for each city...")
+    print(f"Status code : {weather_response.status_code}")
+    print(f"Results = {len(response)}") # dictionaries lists
+    # print(weather_info)
 
+    return weather_info
 
 ##### script tests ####
 if __name__ == "__main__": # ce test s'exécute seulement si le fichier est lancé directement

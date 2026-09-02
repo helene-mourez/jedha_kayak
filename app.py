@@ -19,15 +19,12 @@ from get_hotel import get_hotel
 # call api 
 ## get_city 
 
-# V2.5 "https://api.openweathermap.org/data/2.5/weather"
-# V4.0 "https://api.openweathermap.org/data/4.0/onecall/current"
-
-weather_url = weather_url
-
 cities_info = get_city(cities) # in dictionaries list, fetch per element
 cities_df = t.cities_normalize(cities_info)
 
 ## get_weather
+
+weather_url = weather_url
 
 weather_info = get_weather(cities_info)[0]
 weather_df = t.weather_normalize(weather_info)
@@ -65,7 +62,7 @@ for i, city in enumerate(current_weather_df['city']):
             hotel_info.append(hotel)
         else :
             no_hotel.append(city)
-        print(f"{len(hotel['hotels'])} hotel(s) found for {city}")
+        print(f"{len(hotel['hotels'])} hotel(s) found in {city}")
 
         if (i + 1) % 20 == 0:
             print("Pause after 20 cities...")

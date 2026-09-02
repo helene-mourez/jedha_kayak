@@ -36,13 +36,12 @@ def weather_normalize(weather_info):
 
 # hotel
 
-# à refaire en tenant compte de hotel_city
 def hotel_normalize(hotel_info):
 
-    hotel_df = pd.json_normalize(
+    hotel_df = pd.json_normalize( # normalize imbricated json into dataframe
     hotel_info, 
-    record_path=['hotels'], 
-    meta=['city']
+    record_path=['hotels'], # one line per hotel
+    meta=['city'] # with city column for each line
     )
 
     # add prefix column hotel.

@@ -21,6 +21,10 @@ def get_hotel(city, checkin, checkout):
     """
     Récupère les informations des hôtels pour une ville donnée en utilisant le site Booking.com via Playwright.
     """
+    # logs
+    print("---------------------------------------------------------------------")
+    print("Fetch hotel datas for each city...")
+
     city_url = quote_plus(city)
     # url = f"https://www.booking.com/searchresults.fr.html?ss={city_url}&lang=fr&checkin={checkin}&checkout={checkout}"
     url= f"https://www.booking.com/searchresults.fr.html?ss={city_url}&lang=fr&checkin={checkin}&checkout={checkout}&nflt=ht_id%3D204"
@@ -113,7 +117,7 @@ def get_hotel(city, checkin, checkout):
 
         browser.close()
 
-        return hotel_info
+    return hotel_info
 
 ##### script tests ####
 # get_hotel = get_hotel(city, checkin, checkout)

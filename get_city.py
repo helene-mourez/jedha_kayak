@@ -79,10 +79,15 @@ def get_city(cities):
             print(f"Execution with errors for {city} : {nominatim_response.status_code}")
         
         time.sleep(2) 
-    print(len(response)) # liste de dictionnaires
-    # print(cities_info)
-    return cities_info
 
+    # logs
+    print("---------------------------------------------------------------------")
+    print("Fetch geocodes for each city...")
+    print(f"Status code : {nominatim_response.status_code}")
+    print(f"Results = {len(response)}") # dictionaries lists
+    # print(cities_info)
+    
+    return cities_info
 
 ##### script tests ####
 if __name__ == "__main__": # ce test s'exécute seulement si le fichier est lancé directement
