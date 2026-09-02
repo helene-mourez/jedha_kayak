@@ -40,10 +40,15 @@ def get_hotel(city, checkin, checkout):
         page.wait_for_load_state("networkidle")
         time.sleep(random.uniform(3, 6)) 
 
-###
-        city_text = page.locator("h1").inner_text()
-###        
+        city_text = page.locator("h1").inner_text() # active le filtre établissement = hotel
+
         hotel_cards = page.locator("div[data-testid='property-card']")
+
+# exception waiting for locator("button[aria-label='Fermer']") causée par une liste de sélection
+        if hotel_cards.count()==0: # indiquer si aucun hôtel disponible
+            browser.close()
+            return {"city": city, "hotels": []}
+###            
         hotel_cards.first.wait_for(
             state="visible",
             timeout=30000

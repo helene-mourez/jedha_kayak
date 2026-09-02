@@ -20,7 +20,8 @@ cities = [#"Aigues Mortes", "Aix en Provence", "Amiens", "Annecy", "Avignon",
     "Mont Saint Michel", 
     # "Montauban", "Montségur", "Moustiers-Sainte-Marie",
     # "Niaux", "Nimes", "Orschwiller", "Paris", "Rouen", "Saint-Lizier",
-    # "Saint-Martin-d’Oydes", "Sainte-Croix-du-Verdon", 
+    "Saint-Martin-d’Oydes", 
+    # "Sainte-Croix-du-Verdon", 
 	# "Saintes Maries de la mer", "Sillans-la-Cascade", "St Malo", "Strasbourg",
     # "Tarascon-sur-Ariège", "Toulouse", "Uzes", "Valensole"
     ]
