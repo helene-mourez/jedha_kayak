@@ -44,19 +44,10 @@ def get_hotel(city, checkin, checkout):
         page.wait_for_load_state("networkidle")
         time.sleep(random.uniform(3, 6)) 
 
-###
-        city_text = page.locator("h1").inner_text()
-###        
-        hotel_cards = page.locator("div[data-testid='property-card']")
-<<<<<<< HEAD
+        city_text = page.locator("h1").inner_text() # active le filtre établissement = hotel
 
-# exception waiting for locator("button[aria-label='Fermer']") causée par une liste de sélection
-        if hotel_cards.count()==0: # indiquer si aucun hôtel disponible
-            browser.close()
-            return {"city": city, "hotels": []}
-            
-=======
->>>>>>> parent of 24aff9e (fix exception à la place de no_hotel)
+        hotel_cards = page.locator("div[data-testid='property-card']")
+     
         hotel_cards.first.wait_for(
             state="visible",
             timeout=30000
@@ -113,10 +104,9 @@ def get_hotel(city, checkin, checkout):
 
             hotel_city = get_text(card, "span[data-testid='address-link']")
             
-                ###
             if hotel_city and hotel_city.lower() == city.lower():
                 hotel_info["hotels"].append({"name": name, "hotel.city": hotel_city,"price": price, "score": score})
-            # print(f"get_hotel : {hotel_info}")
+            print(f"get_hotel : {hotel_info}")
             # print(f"ville : {city}, nom de l'hôtel : {name}, prix : {price}, score : {score}")        
 
         browser.close()
