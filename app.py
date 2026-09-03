@@ -48,21 +48,20 @@ no_hotel = []
 checkin = date.today().strftime("%Y-%m-%d") 
 checkout = (date.today() + timedelta(days=1)).strftime("%Y-%m-%d") # tomorrow dates au format AAAA-MM-DD
 
-# checkin = date.today().strftime("%Y-%m-%d") 
-# checkout = (date.today() + timedelta(days=1)).strftime("%Y-%m-%d") # tomorrow dates au format AAAA-MM-DD
-
 for i, city in enumerate(current_weather_df['city']):
     try :
         time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
 
         hotel = get_hotel(city, checkin, checkout) # DataFrame des hôtels pour la ville actuelle
 
-        if hotel['hotels']:
+        if len(hotel['hotels']) > 0:
             hotel['city'] = city
             hotel_info.append(hotel)
         else :
             no_hotel.append(city)
         print(f"{len(hotel['hotels'])} hotel(s) found in {city}")
+
+        time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
 
         if (i + 1) % 20 == 0:
             print("Pause after 20 cities...")
