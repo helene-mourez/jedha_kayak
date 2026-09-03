@@ -54,21 +54,18 @@ for i, city in enumerate(current_weather_df['city']):
 
         hotel = get_hotel(city, checkin, checkout) # DataFrame des hôtels pour la ville actuelle
 
-        if len(hotel['hotels']) > 0:
-            hotel['city'] = city
+        if hotel is not None:
+            hotel["city"] = city
             hotel_info.append(hotel)
-        else :
-            no_hotel.append(city)
-        print(f"{len(hotel['hotels'])} hotel(s) found in {city}")
-
-        time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
+            print(f"{len(hotel_info[-1]['hotels'])} hotel(s) found for {city}")
 
         if (i + 1) % 20 == 0:
             print("Pause after 20 cities...")
             time.sleep(random.uniform(30, 60))  # Pause plus longue après chaque 20 villes
 
     except Exception as e:
-        print(f"No hotel fetched : {city}")
+        no_hotel.append(city)
+        print(f"No hotel available : {city}")
         print(f"Technical error : {e}")
         continue  # Passe à la ville suivante en cas d'erreur   
    
@@ -82,7 +79,7 @@ df = t.merge2(current_weather_df, hotel_df)
 print(f"No hotel available today : {len(no_hotel)} in {no_hotel}")
 
 print(hotel_df)
-# print(df)
+print(df)
 
 # write csv file 
 
