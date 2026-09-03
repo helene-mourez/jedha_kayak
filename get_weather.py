@@ -47,6 +47,11 @@ def get_weather_info(cities_infos):
     # Applatissement général du JSON
     df_weather = pd.json_normalize(rows)
 
+    # Ajout de la colonne "rain.1h" si elle n'existe pas et remplissage des valeurs manquantes avec 0
+    if "rain.1h" not in df_weather.columns:
+        df_weather["rain.1h"] = 0
+    df_weather["rain.1h"] = df_weather["rain.1h"].fillna(0)
+
     # Applatissement du JSON pour la colonne "weather"
     weather = pd.json_normalize(df_rows["weather"])
     final_weather = pd.json_normalize(weather.to_dict(orient="records"))
