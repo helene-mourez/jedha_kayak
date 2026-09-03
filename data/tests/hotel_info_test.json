@@ -5,151 +5,201 @@
             "hotel_city": "Arenas, Nice",
             "name": "ibis budget Nice Aeroport",
             "price": "€ 151",
-            "score": "Avec une note de 7,7 7,7 Bien 9 220 expériences vécues"
+            "score": "Avec une note de 7,7 7,7 Bien 9 228 expériences vécues",
+            "latitude": 43.667390441613264,
+            "longitude": 7.213693857192993
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "LE CALA - BIG FLAT - Hypercentre - 4 chambres - Air Conditionning",
             "price": "€ 677",
-            "score": "Avec une note de 9,4 9,4 Fabuleux 20 expériences vécues"
+            "score": "Avec une note de 9,3 9,3 Fabuleux 21 expériences vécues",
+            "latitude": 43.7006098537971,
+            "longitude": 7.2679999234369
         },
         {
             "hotel_city": "Arenas, Nice",
             "name": "ibis Nice Aéroport Promenade des Anglais",
-            "price": "€ 174",
-            "score": "Avec une note de 8,0 8,0 Très bien 2 096 expériences vécues"
+            "price": "€ 214",
+            "score": "Avec une note de 8,0 8,0 Très bien 2 098 expériences vécues",
+            "latitude": 43.67122390239917,
+            "longitude": 7.224100470630219
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "Crisol Mozart",
             "price": "€ 336",
-            "score": "Avec une note de 8,2 8,2 Très bien 1 279 expériences vécues"
+            "score": "Avec une note de 8,2 8,2 Très bien 1 279 expériences vécues",
+            "latitude": 43.6998987,
+            "longitude": 7.2621039
         },
         {
             "hotel_city": "Arenas, Nice",
             "name": "Greet Hotel Nice Aéroport Promenade des Anglais",
-            "price": "€ 159",
-            "score": "Avec une note de 7,5 7,5 Bien 3 918 expériences vécues"
+            "price": "€ 162",
+            "score": "Avec une note de 7,5 7,5 Bien 3 924 expériences vécues",
+            "latitude": 43.67015322761034,
+            "longitude": 7.222309112548828
         },
         {
             "hotel_city": "Nice",
             "name": "PARME ETAPE",
             "price": "€ 102",
-            "score": "Avec une note de 6,5 6,5 Note 3 384 expériences vécues"
-        },
-        {
-            "hotel_city": "Promenade des Anglais, Nice",
-            "name": "Hotel Palais de la Mediterranee, in the Unbound Collection by Hyatt",
-            "price": "€ 1 288",
-            "score": "Avec une note de 8,6 8,6 Superbe 904 expériences vécues"
-        },
-        {
-            "hotel_city": "Promenade des Anglais, Nice",
-            "name": "Hôtel Le Royal Promenade des Anglais",
-            "price": "€ 481",
-            "score": "Avec une note de 8,2 8,2 Très bien 3 700 expériences vécues"
-        },
-        {
-            "hotel_city": "Arenas, Nice",
-            "name": "Nemea Appart Hotel Sunset Nice Arenas",
-            "price": "€ 146",
-            "score": "Avec une note de 6,8 6,8 Note 119 expériences vécues"
-        },
-        {
-            "hotel_city": "Liberation, Nice",
-            "name": "Alpazur",
-            "price": "€ 77",
-            "score": "Avec une note de 7,4 7,4 Bien 642 expériences vécues"
-        },
-        {
-            "hotel_city": "Centre-ville de Nice, Nice",
-            "name": "Hostel Ozz Nice",
-            "price": "€ 200",
-            "score": "Avec une note de 8,1 8,1 Très bien 5 498 expériences vécues"
-        },
-        {
-            "hotel_city": "Centre-ville de Nice, Nice",
-            "name": "Antares hostel",
-            "price": "€ 124",
-            "score": "Avec une note de 8,1 8,1 Très bien 1 632 expériences vécues"
-        },
-        {
-            "hotel_city": "Centre-ville de Nice, Nice",
-            "name": "ESPERANCE HOTEL",
-            "price": "€ 168",
-            "score": "Avec une note de 7,3 7,3 Bien 1 593 expériences vécues"
+            "score": "Avec une note de 6,5 6,5 Note 3 385 expériences vécues",
+            "latitude": 43.674785,
+            "longitude": 7.203905
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "Hotel Gounod Fully Renovated",
             "price": "€ 685",
-            "score": "Avec une note de 9,1 9,1 Fabuleux 1 075 expériences vécues"
+            "score": "Avec une note de 9,1 9,1 Fabuleux 1 077 expériences vécues",
+            "latitude": 43.69899966827837,
+            "longitude": 7.260122895240784
+        },
+        {
+            "hotel_city": "Promenade des Anglais, Nice",
+            "name": "Hotel Palais de la Mediterranee, in the Unbound Collection by Hyatt",
+            "price": "€ 1 058",
+            "score": "Avec une note de 8,6 8,6 Superbe 904 expériences vécues",
+            "latitude": 43.695078515382,
+            "longitude": 7.263395190238953
+        },
+        {
+            "hotel_city": "Liberation, Nice",
+            "name": "Alpazur",
+            "price": "€ 77",
+            "score": "Avec une note de 7,4 7,4 Bien 644 expériences vécues",
+            "latitude": 43.7122707,
+            "longitude": 7.2624651
+        },
+        {
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hostel Ozz Nice",
+            "price": "€ 200",
+            "score": "Avec une note de 8,1 8,1 Très bien 5 492 expériences vécues",
+            "latitude": 43.70385518175827,
+            "longitude": 7.263993322849274
+        },
+        {
+            "hotel_city": "Arenas, Nice",
+            "name": "Nemea Appart Hotel Sunset Nice Arenas",
+            "price": "€ 185",
+            "score": "Avec une note de 6,8 6,8 Note 121 expériences vécues",
+            "latitude": 43.6724397,
+            "longitude": 7.2224856
+        },
+        {
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Antares hostel",
+            "price": "€ 124",
+            "score": "Avec une note de 8,1 8,1 Très bien 1 632 expériences vécues",
+            "latitude": 43.705002103663396,
+            "longitude": 7.26415291428566
+        },
+        {
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "ESPERANCE HOTEL",
+            "price": "€ 138",
+            "score": "Avec une note de 7,3 7,3 Bien 1 591 expériences vécues",
+            "latitude": 43.704736,
+            "longitude": 7.264822
         },
         {
             "hotel_city": "Nice",
             "name": "Hotel Ibis Budget Nice Palais Nikaia",
             "price": "€ 118",
-            "score": "Avec une note de 7,1 7,1 Bien 2 376 expériences vécues"
+            "score": "Avec une note de 7,1 7,1 Bien 2 371 expériences vécues",
+            "latitude": 43.680723,
+            "longitude": 7.199602
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "Hôtel Lyonnais",
             "price": "€ 85",
-            "score": "Avec une note de 4,9 4,9 Note 1 771 expériences vécues"
+            "score": "Avec une note de 5,0 5,0 Note 1 773 expériences vécues",
+            "latitude": 43.7027064200399,
+            "longitude": 7.26553500629961
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "Maison Albar - Le Victoria",
             "price": "€ 1 116",
-            "score": "Avec une note de 9,1 9,1 Fabuleux 713 expériences vécues"
-        },
-        {
-            "hotel_city": "Arenas, Nice",
-            "name": "Novotel Suites Nice Airport",
-            "price": "€ 296",
-            "score": "Avec une note de 8,4 8,4 Très bien 2 482 expériences vécues"
+            "score": "Avec une note de 9,1 9,1 Fabuleux 715 expériences vécues",
+            "latitude": 43.6964057,
+            "longitude": 7.2665876
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "Hotel 64 Nice",
-            "price": "€ 799",
-            "score": "Avec une note de 8,9 8,9 Superbe 2 494 expériences vécues"
-        },
-        {
-            "hotel_city": "Centre-ville de Nice, Nice",
-            "name": "Hotel Le Grimaldi by Happyculture",
-            "price": "€ 618",
-            "score": "Avec une note de 8,6 8,6 Superbe 1 997 expériences vécues"
+            "price": "€ 599",
+            "score": "Avec une note de 8,9 8,9 Superbe 2 493 expériences vécues",
+            "latitude": 43.70511650379954,
+            "longitude": 7.2652412205934525
         },
         {
             "hotel_city": "Promenade des Anglais, Nice",
             "name": "Hôtel West End Promenade",
             "price": "€ 735",
-            "score": "Avec une note de 8,3 8,3 Très bien 2 364 expériences vécues"
+            "score": "Avec une note de 8,3 8,3 Très bien 2 364 expériences vécues",
+            "latitude": 43.694609200970255,
+            "longitude": 7.259656190872192
+        },
+        {
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Hotel Le Grimaldi by Happyculture",
+            "price": "€ 599",
+            "score": "Avec une note de 8,6 8,6 Superbe 1 996 expériences vécues",
+            "latitude": 43.699177103109264,
+            "longitude": 7.264816761016846
         },
         {
             "hotel_city": "Vieux-Nice, Nice",
             "name": "Albert 1er",
-            "price": "€ 344",
-            "score": "Avec une note de 8,4 8,4 Très bien 2 959 expériences vécues"
+            "price": "€ 636",
+            "score": "Avec une note de 8,5 8,5 Très bien 2 956 expériences vécues",
+            "latitude": 43.69590659424982,
+            "longitude": 7.2692906856536865
         },
         {
             "hotel_city": "Nice",
             "name": "Moxy Nice",
             "price": "€ 167",
-            "score": "Avec une note de 8,4 8,4 Très bien 335 expériences vécues"
+            "score": "Avec une note de 8,4 8,4 Très bien 335 expériences vécues",
+            "latitude": 43.684734,
+            "longitude": 7.2023622
         },
         {
             "hotel_city": "Centre-ville de Nice, Nice",
             "name": "Splendid Hotel & Spa Nice",
-            "price": "€ 349",
-            "score": "Avec une note de 8,0 8,0 Très bien 2 720 expériences vécues"
+            "price": "€ 324",
+            "score": "Avec une note de 8,0 8,0 Très bien 2 721 expériences vécues",
+            "latitude": 43.698558502898415,
+            "longitude": 7.260000854730606
         },
         {
-            "hotel_city": "Promenade des Anglais, Nice",
-            "name": "Westminster Hotel & Spa Nice",
-            "price": "€ 737",
-            "score": "Avec une note de 8,4 8,4 Très bien 2 636 expériences vécues"
+            "hotel_city": "Mont Boron, Nice",
+            "name": "Hotel Le Saint Paul",
+            "price": "€ 233",
+            "score": "Avec une note de 8,9 8,9 Superbe 2 765 expériences vécues",
+            "latitude": 43.69222184641998,
+            "longitude": 7.291072905063629
+        },
+        {
+            "hotel_city": "Centre-ville de Nice, Nice",
+            "name": "Little Palace",
+            "price": "€ 154",
+            "score": "Avec une note de 7,8 7,8 Bien 669 expériences vécues",
+            "latitude": 43.69998185558695,
+            "longitude": 7.260356917977333
+        },
+        {
+            "hotel_city": "Saint-Isidore, Nice",
+            "name": "Servotel Saint-Vincent",
+            "price": "€ 262",
+            "score": "Avec une note de 8,3 8,3 Très bien 801 expériences vécues",
+            "latitude": 43.710954498838255,
+            "longitude": 7.192544639110565
         }
     ]
 }

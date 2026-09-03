@@ -62,21 +62,35 @@ for i, city in enumerate(exercice_cities_booking_aliases):
             hotels_infos.append(hotel)
             print(f"Nombre d'hôtels trouvés pour {city} : {len(hotels_infos[-1]['hotels'])}")
 
-        # time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
+        time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
         
         if (i + 1) % 20 == 0:
             print("Pause après 20 villes...")
-            time.sleep(random.uniform(30, 60))  # Pause plus longue après chaque 20 villes
+            time.sleep(random.uniform(20, 30))  # Pause plus longue après chaque 20 villes
         
     except Exception as e:
         failed_cities.append(city)
-        hotels_infos["city"].append(city)  # Ajoute la ville à la liste des échecs pour référence
+        # hotels_infos["city"].append(city)  # Ajoute la ville à la liste des échecs pour référence
         print()
-        print(f"Aucun hôtel trouvé pour la ville : {city}")
+        if len(failed_cities) > 0:
+            print(f"Aucun hôtel trouvé pour la ville : {city}")
+            print(f"Villes en échec jusqu'à présent : {failed_cities}")
         print(f"Erreur : {e}")
         print()
         continue  # Passe à la ville suivante en cas d'erreur
 
+for i, failed_city in enumerate(failed_cities):
+    try : 
+        print(f"Villes en échec ({i + 1}/{len(failed_cities)}) : {failed_city}")
+
+        hotels_retry = get_hotel_info(failed_city, checkin, checkout)  # Retry pour les villes en échec
+        if hotels_retry is not None:
+            hotels_infos.append(hotels_retry)
+            print(f"Nombre d'hôtels trouvés pour les villes : {failed_city} {len(hotels_retry['hotels'])}")
+            time.sleep(random.uniform(8, 12))  # Pause random entre chaque ville pour éviter de se faire exclure
+    except Exception as e:
+        print(f"Erreur lors de la récupération des hôtels pour la ville en échec {failed_city} : {e}")
+        
 # ----------------- Bloc de création des DataFrames finaux -----------------  #
 print("---------------------------------------------------------------------")
 print("Création des DataFrames finaux...")
