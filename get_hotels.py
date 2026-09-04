@@ -84,24 +84,24 @@ def get_hotel_info(city, checkin, checkout):
                     "data-atlas-latlng",
                     timeout=10_000,
                 )
+
+                #sous_notes = detail_page.locator("xpath= - xpath-des-sous notes/sous notes").get_attribute(
+                            #      "data-atlas-latlng",
+                            #      timeout=10_000,
+                            #   )
+                
+                # Nouvelles features...
+
             except PlaywrightTimeoutError as exc:
                 raise RuntimeError(f"Coordonnées non trouvées pour {name}") from exc
             # c'est pas un doublon avec le try except ? 
             if lat_lon is None:
                 raise RuntimeError(f"Coordonnées non trouvées pour {name}")
+                # raise RuntimeError(f"Sous notes non trouvées pour {name}") from exc
             # -----
             latitude_text, longitude_text = lat_lon.split(",", maxsplit=1)
             latitude = float(latitude_text)
             longitude = float(longitude_text)
-
-            ### Hélène : Bloc de récupration des sous notes :
-            # try : 
-            #     sous_notes = detail_page.locator("xpath= - xpath-des-sous notes/sous notes").get_attribute(
-            #                         "data-atlas-latlng",
-            #                         timeout=10_000,
-            #                     )
-            #     except PlaywrightTimeoutError as exc:
-            #         raise RuntimeError(f"Sous notes non trouvées pour {name}") from exc
 
             # traitement des sous notes pour les ajouter à l'info de l'hôtel
             # ...
